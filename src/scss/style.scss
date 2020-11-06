@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;800&display=swap');
+
+$nav-width: 80px;
+$nav-width-expanded: 300px;
+$nav-width-mobile: 70px;
+
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+    background-color: #F4F7F9;
+    font-family: 'Inter', Ubuntu, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+}
+
+nav
+{
+    color: white;
+    text-decoration: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #23232E;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    width: $nav-width;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    overflow-x: hidden;
+
+    a
+    {
+        text-decoration: none;
+        width: 100%;
+        height: $nav-width;
+    }
+
+    &.open
+    {
+        width: $nav-width-expanded;
+
+        span
+        {
+            transition-duration: 0.4s !important;
+            position: absolute !important;
+            left: 80px !important;
+            opacity: 100% !important;
+        }
+    }
+
+    div
+    {
+        width: 100%;
+        height: $nav-width;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: #23232E;
+        transition-duration: 0.2s;
+
+        &:hover
+        {
+            background-color: #141418;
+            
+            svg
+            {
+                fill: #FB7E7E;
+            }
+        }
+
+        span
+        {
+            transition-timing-function: ease;
+            text-overflow: clip;
+            text-decoration: none;
+            position: absolute;
+            color: #b6b6b6;
+            font-weight: 500;
+            font-size: 1rem;
+            opacity: 0;
+            word-wrap: none;
+        }
+
+        &#logo-tile
+        {
+            background-color: #141418;
+            margin-bottom: 20px;
+
+            span
+            {
+                left: 200px;
+                font-size: 1.3rem;
+                font-weight: 600;
+            }
+
+            svg
+            {
+                right: 21px;
+            }
+        }
+        
+        &.active svg
+        {
+            fill: #FB7E7E;
+        }
+
+        svg
+        {
+            position: absolute;
+            left: 21px;
+            fill: #8f8f8f;
+            transition-property: fill;
+            transition-duration: 0.2s;
+            transition-timing-function: ease;
+            width: 35px;
+            height: 35px;
+        }
+    }
+}
+
+main
+{
+    position: relative;
+    width: calc(100vw - #{$nav-width});
+    left: $nav-width;
+    padding: 8px 12px;
+}

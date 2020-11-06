@@ -1,5 +1,4 @@
-## Gulp + Sass + Browsersync template
-A template for rapid development of frameworkless html+scss+js websites with hot reloading.  
+## Sandhi website
 
 ## Install Dependencies
 `$ npm install`  
