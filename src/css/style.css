@@ -23,7 +23,8 @@ nav {
   width: 80px;
   transition-duration: 0.4s;
   transition-timing-function: ease;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  z-index: 5; }
   nav a {
     text-decoration: none;
     width: 100%;
@@ -82,5 +83,21 @@ nav {
 main {
   position: relative;
   width: calc(100vw - 80px);
-  left: 80px;
-  padding: 8px 12px; }
+  left: 80px; }
+  main header {
+    background-color: #4D4D5B;
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 48px;
+    display: flex;
+    flex-direction: column; }
+    main header #title {
+      font-weight: 800;
+      font-size: 1.3rem;
+      color: #A0A0AB;
+      margin-bottom: 12px; }
+    main header #headline {
+      font-weight: 600;
+      font-size: 1.7rem;
+      color: #FFFFFF;
+      margin-bottom: 30px; }

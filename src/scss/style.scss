@@ -34,6 +34,7 @@ nav
     transition-duration: 0.4s;
     transition-timing-function: ease;
     overflow-x: hidden;
+    z-index: 5;
 
     a
     {
@@ -131,5 +132,30 @@ main
     position: relative;
     width: calc(100vw - #{$nav-width});
     left: $nav-width;
-    padding: 8px 12px;
+
+    header
+    {
+        background-color: #4D4D5B;
+        width: 100%;
+        min-height: 100px;
+        padding: 20px 48px;
+        display: flex;
+        flex-direction: column;
+
+        #title
+        {
+            font-weight: 800;
+            font-size: 1.3rem;
+            color: #A0A0AB;
+            margin-bottom: 12px;
+        }
+
+        #headline
+        {
+            font-weight: 600;
+            font-size: 1.7rem;
+            color: #FFFFFF;
+            margin-bottom: 30px;
+        }
+    }
 }
