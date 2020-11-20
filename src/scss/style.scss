@@ -2,7 +2,8 @@
 
 $nav-width: 80px;
 $nav-width-expanded: 300px;
-$nav-width-mobile: 70px;
+$nav-height-mobile: 80px;
+
 
 *
 {
@@ -156,6 +157,46 @@ main
             font-size: 1.7rem;
             color: #FFFFFF;
             margin-bottom: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px)
+{
+    main
+    {
+        left: 0;
+        width: 100vw;
+    }
+
+    nav
+    {
+        width: 100vw;
+        height: $nav-height-mobile;
+        top: unset;
+        bottom: 0;
+        left: 0;
+        flex-direction: row;
+        align-items: center;
+
+        #logo-tile
+        {
+            margin-bottom: 0 !important;
+        }
+
+        &.open
+        {
+            width: 100vw;
+            
+            span
+            {
+                display: none;
+            }
+        }
+
+        span
+        {
+            display: none;
         }
     }
 }

@@ -101,3 +101,24 @@ main {
       font-size: 1.7rem;
       color: #FFFFFF;
       margin-bottom: 30px; }
+
+@media only screen and (max-width: 900px) {
+  main {
+    left: 0;
+    width: 100vw; }
+  nav {
+    width: 100vw;
+    height: 80px;
+    top: unset;
+    bottom: 0;
+    left: 0;
+    flex-direction: row;
+    align-items: center; }
+    nav #logo-tile {
+      margin-bottom: 0 !important; }
+    nav.open {
+      width: 100vw; }
+      nav.open span {
+        display: none; }
+    nav span {
+      display: none; } }
