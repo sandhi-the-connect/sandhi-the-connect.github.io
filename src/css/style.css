@@ -7,7 +7,7 @@
 }
 body {
   margin: 0;
-  background-color: #F4F7F9;
+  background-color: #e7ecf0;
   font-family: 'Inter', Ubuntu, Helvetica, Arial, sans-serif;
   font-weight: 500; }
 
@@ -103,7 +103,7 @@ main {
     main header #headline {
       font-weight: 600;
       color: #FFFFFF;
-      margin-bottom: 30px; }
+      margin-bottom: 22px; }
 
 @media only screen and (max-width: 900px) {
   main {
@@ -131,11 +131,11 @@ main {
     padding: 36px 48px;
   }
   main header #title {
-    font-size: 1.45rem;
+    font-size: 1.5rem;
   }
   main header #headline{
-    font-size: 1.85rem;
-    width: 50%;
+    font-size: 2rem;
+    width: 55%;
   }
 }
 
@@ -145,10 +145,10 @@ main {
   }
   main header #title {    
     margin-top: 12px;
-    font-size: 1.45rem;
+    font-size: 1.35rem;
   }
   main header #headline{
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     width: 100%;
   }
 }
