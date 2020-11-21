@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;800&display=swap");
 * {
   box-sizing: border-box; }
-
+::selection{
+  background-color: #14141856;
+  color: #ffffff;
+}
 body {
   margin: 0;
   background-color: #F4F7F9;
@@ -149,4 +152,3 @@ main {
     width: 100%;
   }
 }
-
