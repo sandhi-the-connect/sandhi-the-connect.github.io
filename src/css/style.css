@@ -46,7 +46,10 @@ nav {
     background-color: #23232E;
     transition-duration: 0.2s; }
     nav div:hover {
-      background-color: #141418; }
+      background-color: #141418;
+      color: #ffffff;
+      opacity: 100% !important;
+     }
       nav div:hover svg {
         fill: #FB7E7E; }
     nav div span {
