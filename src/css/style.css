@@ -137,7 +137,7 @@ main {
 
 @media only screen and (max-width: 600px) {
   main header{
-    padding: 25px 32px;
+    padding: 20px 32px;
   }
   main header #title {
     font-size: 1.3rem;
