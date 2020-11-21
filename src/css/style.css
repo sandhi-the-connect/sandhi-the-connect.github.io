@@ -88,17 +88,17 @@ main {
     background-color: #4D4D5B;
     width: 100%;
     min-height: 100px;
-    padding: 20px 48px;
+    padding: 32px 48px;
     display: flex;
     flex-direction: column; }
     main header #title {
       font-weight: 800;
-      font-size: 1.3rem;
+      font-size: 1.45rem;
       color: #A0A0AB;
       margin-bottom: 12px; }
     main header #headline {
       font-weight: 600;
-      font-size: 1.7rem;
+      font-size: 1.85rem;
       color: #FFFFFF;
       margin-bottom: 30px; }
 
@@ -122,3 +122,16 @@ main {
         display: none; }
     nav span {
       display: none; } }
+  
+@media only screen and (min-width: 600px) {
+  #headline{
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #headline{
+    width: 90%;
+  }
+}
+
