@@ -132,8 +132,6 @@ main {
   }
   main header #headline{
     font-size: 1.85rem;
-  }
-  #headline{
     width: 50%;
   }
 }
@@ -142,13 +140,12 @@ main {
   main header{
     padding: 28px 30px;
   }
-  main header #title {
+  main header #title {    
+    margin-top: 12px;
     font-size: 1.45rem;
   }
   main header #headline{
     font-size: 1.7rem;
-  }
-  #headline{
     width: 100%;
   }
 }
