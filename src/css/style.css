@@ -140,10 +140,10 @@ main {
 
 @media only screen and (max-width: 600px) {
   main header{
-    padding: 22px 28px;
+    padding: 28px 30px;
   }
   main header #title {
-    font-size: 1.3rem;
+    font-size: 1.45rem;
   }
   main header #headline{
     font-size: 1.7rem;
