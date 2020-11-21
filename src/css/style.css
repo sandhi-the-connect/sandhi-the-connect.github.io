@@ -23,7 +23,7 @@ nav {
   justify-content: flex-start;
   align-items: center;
   height: 100vh;
-  width: 80px;
+  width: 85px;
   transition-duration: 0.4s;
   transition-timing-function: ease;
   overflow-x: hidden;
@@ -35,7 +35,7 @@ nav {
   nav.open {
     width: 300px; }
     nav.open span {
-      transition-duration: 0.4s !important;
+      transition-duration: 1.5s !important;
       position: absolute !important;
       left: 80px !important;
       opacity: 100% !important; }
@@ -47,9 +47,9 @@ nav {
     align-items: center;
     position: relative;
     background-color: #23232E;
-    transition-duration: 0.2s; }
+    transition-duration: 0.25s; }
     nav div:hover {
-      background-color: #141418;
+      background-color: #15151999;
       color: #ffffff;
       opacity: 100% !important;
      }
@@ -62,7 +62,7 @@ nav {
       position: absolute;
       color: #b6b6b6;
       font-weight: 500;
-      font-size: 1rem;
+      font-size: 1.15rem;
       opacity: 0;
       word-wrap: none; }
     nav div#logo-tile {
@@ -74,6 +74,9 @@ nav {
         font-weight: 600; }
       nav div#logo-tile svg {
         right: 21px; }
+
+    nav div.active {
+      background-color:#141418;}
     nav div.active svg {
       fill: #FB7E7E; }
     nav div svg {
@@ -118,7 +121,10 @@ main {
     flex-direction: row;
     align-items: center; }
     nav #logo-tile {
+      display: none;
       margin-bottom: 0 !important; }
+    nav div.active {
+      background-color: #151519;}
     nav.open {
       width: 100vw; }
       nav.open span {
