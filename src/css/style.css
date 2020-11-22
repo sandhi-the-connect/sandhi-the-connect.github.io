@@ -215,7 +215,7 @@ main {
   main section{    
     margin: auto auto; 
   }
-  main section .blog-card {
+  main section#blog-tiles {
     width: 90%;
   }
 }
