@@ -107,8 +107,7 @@ main {
       color: #FFFFFF;
       margin-bottom: 30px; }
   main section {
-    padding: 42px 60px;
-    margin: 55px auto; }
+    padding: 42px 60px;}
     main section#blog-tiles {
       display: grid;
       grid-template-columns: repeat(auto-fill, 370px);
@@ -116,7 +115,8 @@ main {
       column-gap: 42px;
       row-gap: 42px;
       justify-content: center; }
-    main section .blog-card {
+    main section .blog-card {      
+      transition: 0.2s ease-out;
       overflow: hidden;
       border-radius: 15px;
       box-shadow: #adc6d66e 0px 7px 15px;
@@ -131,8 +131,6 @@ main {
       main section .blog-card .blog-title {
         font-size: 1.4rem;
         grid-column: 1/6; }
-      main section .blog-card .blog-line {
-        height:2px;}
       main section .blog-card .author-image {
         grid-row: 3/5;
         grid-column: 1/2;
@@ -144,11 +142,22 @@ main {
         justify-self: center;
         align-self: center; }
       main section .blog-card .post-date {
+        opacity: 0.7;
         grid-row: 4/5;
         grid-column: 2/4; }
       main section .blog-card .author-name {
+        opacity: 0.7;
         grid-row: 3/4;
         grid-column: 2/6; }
+      
+      a.blog-card-link, a.blog-card-link:hover {
+        text-decoration: none;
+        color: inherit;
+      }
+      main section .blog-card:hover {
+        box-shadow: #adc6d6b4 0px 15px 20px; 
+        transform: translateY(-4px);
+      }
 
 @media only screen and (max-width: 900px) {
   main {
@@ -182,6 +191,9 @@ main {
   main header #title {
     font-size: 1.5rem;
   }
+  main section{    
+    margin: 55px auto; 
+  }
   main header #headline{
     font-size: 2rem;
     width: 55%;
@@ -200,7 +212,10 @@ main {
     font-size: 1.6rem;
     width: 100%;
   }
+  main section{    
+    margin: auto auto; 
+  }
   main section .blog-card {
-    width: 97%;
+    width: 90%;
   }
 }
