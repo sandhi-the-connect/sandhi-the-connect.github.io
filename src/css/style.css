@@ -2,6 +2,24 @@
 * {
   box-sizing: border-box; }
 
+::selection {
+  background-color: #fb7e7e7c;
+  color: #fff; }
+
+::-webkit-scrollbar {
+  width: 10px; }
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff00;
+  border-radius: 10px; }
+
+::-webkit-scrollbar-thumb {
+  background: #FB7E7E;
+  border-radius: 10px; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c97171; }
+
 body {
   margin: 0;
   background-color: #F4F7F9;
@@ -100,20 +118,19 @@ nav div svg {
 
 main {
   position: relative;
-  width: calc(100vw - 80px);
-  left: 80px; }
+  width: calc(100vw - 85px);
+  left: 85px; }
 
 main header {
   background-color: #4D4D5B;
   width: 100%;
   min-height: 100px;
-  padding: 20px 48px;
   display: flex;
   flex-direction: column; }
 
 main header #title {
   font-weight: 900;
-  color: #A0A0AB;
+  color: #aba0a0;
   margin-bottom: 12px; }
 
 main header #headline {
@@ -134,6 +151,7 @@ main section#blog-tiles {
 
 main section .blog-card {
   transition: 0.2s ease-out;
+  opacity: 0.8;
   overflow: hidden;
   border-radius: 15px;
   box-shadow: #adc6d66e 0px 7px 15px;
@@ -147,7 +165,9 @@ main section .blog-card {
   padding: 20px 25px; }
 
 main section .blog-card .blog-title {
-  font-size: 1.4rem;
+  font-size: 1.45rem;
+  font-weight: 650;
+  color: #464242;
   grid-column: 1/6; }
 
 main section .blog-card .author-image {
@@ -160,6 +180,16 @@ main section .blog-card .author-image {
   background-color: black;
   justify-self: center;
   align-self: center; }
+
+main section .blog-card .line {
+  grid-column: 1/6;
+  grid-row: 2/3;
+  width: 21vw;
+  transform: translateY(-12px);
+  margin-top: 20px;
+  background-color: #7474bb3a;
+  border-radius: 20%;
+  height: 1.5px; }
 
 main section .blog-card .post-date {
   opacity: 0.7;
@@ -176,7 +206,9 @@ a.blog-card-link, a.blog-card-link:hover {
   color: inherit; }
 
 main section .blog-card:hover {
-  box-shadow: #adc6d6b4 0px 15px 20px;
+  color: #000 !important;
+  opacity: 1;
+  box-shadow: #aec4d3b4 0px 15px 22px;
   transform: translateY(-4px); }
 
 @media only screen and (max-width: 900px) {
@@ -205,7 +237,7 @@ main section .blog-card:hover {
 
 @media only screen and (min-width: 600px) {
   main header {
-    padding: 36px 48px; }
+    padding: 36px 96px; }
   main header #title {
     font-size: 1.5rem; }
   main section {
@@ -213,16 +245,6 @@ main section .blog-card:hover {
   main header #headline {
     font-size: 2rem;
     width: 55%; } }
-
-main section .blog-card .line {
-  grid-column: 1/6;
-  grid-row: 2/3;
-  width: 21vw;
-  transform: translateY(-12px);
-  margin-top: 20px;
-  background-color: #7474bb3a;
-  border-radius: 20%;
-  height: 2px; }
 
 @media only screen and (max-width: 600px) {
   main header {
