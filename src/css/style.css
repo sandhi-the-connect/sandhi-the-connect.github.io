@@ -107,17 +107,18 @@ main {
       color: #FFFFFF;
       margin-bottom: 30px; }
   main section {
-    padding: 42px 60px; }
+    padding: 42px 60px;
+    margin: 55px auto; }
     main section#blog-tiles {
       display: grid;
       grid-template-columns: repeat(auto-fill, 370px);
       grid-auto-flow: row;
-      column-gap: 40px;
+      column-gap: 42px;
       row-gap: 42px;
       justify-content: center; }
     main section .blog-card {
       overflow: hidden;
-      border-radius: 20px;
+      border-radius: 15px;
       box-shadow: #adc6d66e 0px 7px 15px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -128,14 +129,17 @@ main {
       background-color: #fdfdfd;
       padding: 20px 25px; }
       main section .blog-card .blog-title {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         grid-column: 1/6; }
+      main section .blog-card .blog-line {
+        height:2px;}
       main section .blog-card .author-image {
         grid-row: 3/5;
         grid-column: 1/2;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
+        width: 42px;
+        height: 42px;
+        margin-left: -20px;
+        border-radius: 100%;
         background-color: black;
         justify-self: center;
         align-self: center; }
@@ -195,5 +199,8 @@ main {
   main header #headline{
     font-size: 1.6rem;
     width: 100%;
+  }
+  main section .blog-card {
+    width: 97%;
   }
 }
