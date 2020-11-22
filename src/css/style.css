@@ -211,11 +211,12 @@ main {
   main header #headline{
     font-size: 1.6rem;
     width: 100%;
-  }
+  }  
   main section{    
-    margin: auto auto; 
+    margin: auto auto 75px auto; 
   }
-  main section#blog-tiles {
-    width: 90%;
+  main section .blog-card {
+    margin: auto auto;
+    width: 92%;
   }
 }
