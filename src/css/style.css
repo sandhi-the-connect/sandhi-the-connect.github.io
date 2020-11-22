@@ -1,15 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;800&display=swap");
 * {
   box-sizing: border-box; }
-::selection{
-  background-color: #14141856;
-  color: #ffffff;
-}
+
 body {
   margin: 0;
-  background-color: #e7ecf0;
+  background-color: #F4F7F9;
   font-family: 'Inter', Ubuntu, Helvetica, Arial, sans-serif;
-  font-weight: 500; }
+  font-weight: 500;
+  overflow-x: hidden; }
 
 nav {
   color: white;
@@ -52,7 +50,7 @@ nav {
       background-color: #15151967;
       color: #ffffff;
       opacity: 100% !important;
-     }
+      }
       nav div:hover svg {
         fill: #FB7E7E; }
     nav div span {
@@ -91,22 +89,60 @@ nav {
 
 main {
   position: relative;
-  width: calc(100vw - 85px);
-  left: 85px; }
+  width: calc(100vw - 80px);
+  left: 80px; }
   main header {
     background-color: #4D4D5B;
     width: 100%;
     min-height: 100px;
+    padding: 20px 48px;
     display: flex;
     flex-direction: column; }
     main header #title {
-      font-weight: 800;
+      font-weight: 900;
       color: #A0A0AB;
       margin-bottom: 12px; }
     main header #headline {
       font-weight: 600;
       color: #FFFFFF;
-      margin-bottom: 22px; }
+      margin-bottom: 30px; }
+  main section {
+    padding: 42px 48px; }
+    main section#blog-tiles {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 370px);
+      grid-auto-flow: row;
+      column-gap: 18px;
+      row-gap: 42px;
+      justify-content: center; }
+    main section .blog-card {
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: #00000033 3px 3px 12px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 80px 30px;
+      width: 370px;
+      height: 200px;
+      background-color: #fdfdfd;
+      padding: 20px 25px; }
+      main section .blog-card .blog-title {
+        grid-column: 1/6; }
+      main section .blog-card .author-image {
+        grid-row: 3/5;
+        grid-column: 1/2;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: black;
+        justify-self: center;
+        align-self: center; }
+      main section .blog-card .post-date {
+        grid-row: 4/5;
+        grid-column: 2/4; }
+      main section .blog-card .author-name {
+        grid-row: 3/4;
+        grid-column: 2/6; }
 
 @media only screen and (max-width: 900px) {
   main {
@@ -131,7 +167,8 @@ main {
         display: none; }
     nav span {
       display: none; } }
-  
+
+
 @media only screen and (min-width: 600px) {
   main header{
     padding: 36px 48px;
