@@ -193,6 +193,17 @@ main
                 grid-column: 1/6;
             }
 
+            .line
+            {
+                grid-column: 1/6;
+                grid-row: 2/3;
+                width: 100vw;
+                transform: translateX(-50%);
+                margin-top: 20px;
+                background-color: #646464;
+                height: 3px;
+            }
+
             .author-image
             {
                 grid-row: 3/5;
