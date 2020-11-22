@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;800&display=swap");
 * {
   box-sizing: border-box; }
-
+::selection{
+  background-color: #14141856;
+  color: #ffffff;
+}
 body {
   margin: 0;
-  background-color: #F4F7F9;
+  background-color: #e7ecf0;
   font-family: 'Inter', Ubuntu, Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  overflow-x: hidden; }
+  font-weight: 500; }
 
 nav {
   color: white;
@@ -21,7 +23,7 @@ nav {
   justify-content: flex-start;
   align-items: center;
   height: 100vh;
-  width: 80px;
+  width: 85px;
   transition-duration: 0.4s;
   transition-timing-function: ease;
   overflow-x: hidden;
@@ -33,7 +35,7 @@ nav {
   nav.open {
     width: 300px; }
     nav.open span {
-      transition-duration: 0.4s !important;
+      transition-duration: 1.35s !important;
       position: absolute !important;
       left: 80px !important;
       opacity: 100% !important; }
@@ -45,9 +47,12 @@ nav {
     align-items: center;
     position: relative;
     background-color: #23232E;
-    transition-duration: 0.2s; }
+    transition-duration: 0.25s; }
     nav div:hover {
-      background-color: #141418; }
+      background-color: #15151967;
+      color: #ffffff;
+      opacity: 100% !important;
+     }
       nav div:hover svg {
         fill: #FB7E7E; }
     nav div span {
@@ -57,18 +62,21 @@ nav {
       position: absolute;
       color: #b6b6b6;
       font-weight: 500;
-      font-size: 1rem;
+      font-size: 1.15rem;
       opacity: 0;
       word-wrap: none; }
     nav div#logo-tile {
       background-color: #141418;
       margin-bottom: 20px; }
       nav div#logo-tile span {
-        left: 200px;
+        left: 80px;
         font-size: 1.3rem;
         font-weight: 600; }
       nav div#logo-tile svg {
         right: 21px; }
+
+    nav div.active {
+      background-color:#141418;}
     nav div.active svg {
       fill: #FB7E7E; }
     nav div svg {
@@ -83,62 +91,22 @@ nav {
 
 main {
   position: relative;
-  width: calc(100vw - 80px);
-  left: 80px; }
+  width: calc(100vw - 85px);
+  left: 85px; }
   main header {
     background-color: #4D4D5B;
     width: 100%;
     min-height: 100px;
-    padding: 20px 48px;
     display: flex;
     flex-direction: column; }
     main header #title {
       font-weight: 800;
-      font-size: 1.3rem;
       color: #A0A0AB;
       margin-bottom: 12px; }
     main header #headline {
       font-weight: 600;
-      font-size: 1.7rem;
       color: #FFFFFF;
-      margin-bottom: 30px; }
-  main section {
-    padding: 42px 48px; }
-    main section#blog-tiles {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, 370px);
-      grid-auto-flow: row;
-      column-gap: 18px;
-      row-gap: 42px;
-      justify-content: center; }
-    main section .blog-card {
-      overflow: hidden;
-      border-radius: 20px;
-      box-shadow: #00000033 3px 3px 12px;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 80px 30px;
-      width: 370px;
-      height: 200px;
-      background-color: #fdfdfd;
-      padding: 20px 25px; }
-      main section .blog-card .blog-title {
-        grid-column: 1/6; }
-      main section .blog-card .author-image {
-        grid-row: 3/5;
-        grid-column: 1/2;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        background-color: black;
-        justify-self: center;
-        align-self: center; }
-      main section .blog-card .post-date {
-        grid-row: 4/5;
-        grid-column: 2/4; }
-      main section .blog-card .author-name {
-        grid-row: 3/4;
-        grid-column: 2/6; }
+      margin-bottom: 22px; }
 
 @media only screen and (max-width: 900px) {
   main {
@@ -146,17 +114,47 @@ main {
     width: 100vw; }
   nav {
     width: 100vw;
-    height: 70px;
+    height: 80px;
     top: unset;
     bottom: 0;
     left: 0;
     flex-direction: row;
     align-items: center; }
     nav #logo-tile {
+      display: none;
       margin-bottom: 0 !important; }
+    nav div.active {
+      background-color: #151519;}
     nav.open {
       width: 100vw; }
       nav.open span {
         display: none; }
     nav span {
       display: none; } }
+  
+@media only screen and (min-width: 600px) {
+  main header{
+    padding: 36px 48px;
+  }
+  main header #title {
+    font-size: 1.5rem;
+  }
+  main header #headline{
+    font-size: 2rem;
+    width: 55%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main header{
+    padding: 28px 30px;
+  }
+  main header #title {    
+    margin-top: 12px;
+    font-size: 1.35rem;
+  }
+  main header #headline{
+    font-size: 1.6rem;
+    width: 100%;
+  }
+}

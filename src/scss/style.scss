@@ -16,7 +16,6 @@ body
     background-color: #F4F7F9;
     font-family: 'Inter', Ubuntu, Helvetica, Arial, sans-serif;
     font-weight: 500;
-    overflow-x: hidden;
 }
 
 nav
@@ -158,64 +157,6 @@ main
             font-size: 1.7rem;
             color: #FFFFFF;
             margin-bottom: 30px;
-        }
-    }
-
-    section
-    {
-        padding: 42px 48px;
-
-        &#blog-tiles
-        {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, 370px);
-            grid-auto-flow: row;
-            column-gap: 18px;
-            row-gap: 42px;
-            justify-content: center;
-        }
-
-        .blog-card
-        {
-            overflow: hidden;
-            border-radius: 20px;
-            box-shadow: #00000033 3px 3px 12px;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 80px 30px;
-            width: 370px;
-            height: 200px;
-            background-color: #fdfdfd;
-            padding: 20px 25px;
-
-            .blog-title
-            {
-                grid-column: 1/6;
-            }
-
-            .author-image
-            {
-                grid-row: 3/5;
-                grid-column: 1/2;
-                width: 30px;
-                height: 30px;
-                border-radius: 50%;
-                background-color: black;
-                justify-self: center;
-                align-self: center;
-            }
-
-            .post-date
-            {
-                grid-row: 4/5;
-                grid-column: 2/4;
-            }
-
-            .author-name
-            {
-                grid-row: 3/4;
-                grid-column: 2/6;
-            }
         }
     }
 }

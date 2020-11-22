@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         nav.addEventListener("mouseleave", () => {
             nav.classList.remove("open");
-            nav.removeEventListener("mouseleave");
         });
     });
 });
