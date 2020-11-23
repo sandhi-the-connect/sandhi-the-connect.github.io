@@ -11,14 +11,11 @@
 
 ::-webkit-scrollbar-track {
   background-color: #e2dddd;
-  border-radius: 10px;
-  margin: 2.5px 1px; }
+  border-radius: 10px; }
 
 ::-webkit-scrollbar-thumb {
   background: #FB7E7E;
-  border-radius: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px; }
+  border-radius: 10px; }
   ::-webkit-scrollbar-thumb:hover {
     background: #c97171; }
 
@@ -168,7 +165,7 @@ main {
         grid-column: 1/6;
         grid-row: 2/3;
         width: 21vw;
-        transform: translateY(-12px);
+        transform: translateY(-5px);
         margin-top: 20px;
         background-color: #7474bb3a;
         border-radius: 20%;
@@ -178,7 +175,8 @@ main {
         grid-row: 4/5;
         grid-column: 2/4; }
       main section .blog-card .author-name {
-        opacity: 0.7;
+        opacity: 0.8;
+        font-weight: 600;
         grid-row: 3/4;
         grid-column: 2/6; }
       main section .blog-card:hover {
