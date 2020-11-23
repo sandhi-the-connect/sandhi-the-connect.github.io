@@ -140,7 +140,7 @@ main {
 	section {
 		padding: 42px 60px;
 		.blog-card {
-			transition: 0.2s ease-out;
+			transition: transform 1.5s cubic-bezier(0,.67,.16,1), box-shadow 1.5s cubic-bezier(0,.67,.16,1), -webkit-transform 1.2s cubic-bezier(0,.67,.16,1);
 			opacity: 0.9;
 			overflow: hidden;
 			border-radius: 15px;
@@ -198,8 +198,8 @@ main {
 			&:hover {
 				color: #000 !important;
 				opacity: 1;
-				box-shadow: #aec4d3b4 0px 15px 22px;
-				transform: translateY(-4px);
+				box-shadow: #9bb1c0b4 0px 17px 30px;
+				transform: translateY(-10px);
 			}
 		}
 	}
