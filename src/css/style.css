@@ -165,7 +165,6 @@ main {
         grid-column: 1/6;
         grid-row: 2/3;
         width: 21vw;
-        transform: translateY(-5px);
         margin-top: 20px;
         background-color: #7474bb3a;
         border-radius: 20%;
