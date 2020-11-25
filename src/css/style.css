@@ -157,6 +157,8 @@ main {
         background: url("../assets/blog/samridhi.png"); }
       main section .blog-card .ananya {
         background: url("../assets/blog/ananya.png"); }
+      main section .blog-card .medhya {
+        background: url("../assets/blog/medhya.png"); }
       main section .blog-card .tapasmi {
         background: url("../assets/blog/tapasmi.png"); }
       main section .blog-card .swastika {
@@ -181,7 +183,7 @@ main {
       main section .blog-card:hover {
         color: #000 !important;
         opacity: 1;
-        box-shadow: #9bb1c0b4 0px 17px 30px;
+        box-shadow: #9bb1c0b4 0px 25px 35px;
         transform: translateY(-10px); }
   main section#blog-tiles {
     display: grid;
