@@ -183,7 +183,7 @@ main {
       main section .blog-card:hover {
         color: #000 !important;
         opacity: 1;
-        box-shadow: #9bb1c0b4 0px 25px 35px;
+        box-shadow: #9bb1c0b4 0px 18px 25px;
         transform: translateY(-10px); }
   main section#blog-tiles {
     display: grid;
@@ -192,6 +192,62 @@ main {
     column-gap: 42px;
     row-gap: 42px;
     justify-content: center; }
+  main#team {
+    left: 0;
+    width: 100%; }
+    main#team section {
+      padding: 10px 100px;
+      margin: 30px 0; }
+      main#team section h1.title {
+        padding: 0;
+        margin: 8px 0;
+        font-size: 2.6rem;
+        font-weight: 600;
+        color: #6F767B; }
+      main#team section div.card-flex {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; }
+        main#team section div.card-flex div.team-card {
+          width: 360px;
+          height: 300px;
+          background-color: white;
+          border-radius: 18px;
+          margin-right: 50px;
+          margin-bottom: 50px;
+          box-shadow: #180f301a 3px 3px 8px;
+          padding: 30px 33px;
+          position: relative; }
+          main#team section div.card-flex div.team-card .card-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #7475d8;
+            margin-bottom: 16px; }
+          main#team section div.card-flex div.team-card .card-content {
+            margin-left: 8px; }
+            main#team section div.card-flex div.team-card .card-content .name {
+              font-size: 1.8rem;
+              font-weight: 500;
+              color: #727276; }
+            main#team section div.card-flex div.team-card .card-content .designation {
+              font-size: 1.1rem;
+              margin-top: 4px;
+              font-weight: 500;
+              color: #9B9B9C; }
+            main#team section div.card-flex div.team-card .card-content .socials {
+              overflow: hidden;
+              position: absolute;
+              bottom: 24px;
+              display: flex;
+              flex-direction: row;
+              flex-wrap: nowrap; }
+              main#team section div.card-flex div.team-card .card-content .socials a {
+                font-size: 32px;
+                color: #8989d4;
+                cursor: pointer;
+                margin-right: 14px; }
 
 a.blog-card-link {
   text-decoration: none;
@@ -235,7 +291,7 @@ a.blog-card-link {
   main section {
     margin: 55px auto; } }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 599px) {
   main header {
     padding: 28px 30px; }
     main header #title {
@@ -248,4 +304,10 @@ a.blog-card-link {
     margin: auto auto 75px auto; }
     main section .blog-card {
       margin: auto auto;
-      width: 95%; } }
+      width: 95%; }
+  main#team section {
+    padding: 10px 20px; }
+    main#team section .card-flex {
+      justify-content: center !important; }
+    main#team section .team-card {
+      margin-right: 0 !important; } }
