@@ -533,17 +533,18 @@ a.blog-card-link {
     margin-bottom: 30px; }
     #videos #grade-select div {
       margin-right: 17px;
+      margin-bottom: 24px;
       font-size: 1.2rem;
       padding: 12px 10px;
       border-radius: 18px;
-      background-color: #ffacac;
+      background-color: #626286;
       transition-duration: 0.3s;
       color: white;
       cursor: pointer; }
       #videos #grade-select div.active {
-        background-color: #FB7E7E; }
+        background-color: #1d1d27; }
       #videos #grade-select div:hover {
-        background-color: #FB7E7E; }
+        background-color: #23232E; }
   #videos #grade-1, #videos #grade-2, #videos #grade-3, #videos #grade-4, #videos #grade-5 {
     display: none;
     flex-direction: row;

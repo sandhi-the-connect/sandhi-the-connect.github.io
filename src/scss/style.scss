@@ -674,22 +674,23 @@ a.blog-card-link {
 		div
 		{
 			margin-right: 17px;
+			margin-bottom: 24px;
 			font-size: 1.2rem;
 			padding: 12px 10px;
 			border-radius: 18px;
-			background-color: #ffacac;
+			background-color: #626286;
 			transition-duration: 0.3s;
 			color: white;
 			cursor: pointer;
 
 			&.active
 			{
-				background-color: #FB7E7E;	
+				background-color: #1d1d27;	
 			}
 
 			&:hover
 			{
-				background-color: #FB7E7E;
+				background-color: #23232E;
 			}
 		}
 	}
