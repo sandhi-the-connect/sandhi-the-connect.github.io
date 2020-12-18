@@ -292,7 +292,7 @@ main {
 	section {
 		padding: 42px 60px;
 		.blog-card {
-			transition: transform 1.5s cubic-bezier(0,.67,.16,1), box-shadow 1.5s cubic-bezier(0,.67,.16,1), -webkit-transform 1.2s cubic-bezier(0,.67,.16,1);
+			transition: transform 1.2s cubic-bezier(0,.67,.16,1), box-shadow 0.5s cubic-bezier(0,.67,.16,1), -webkit-transform 1.2s cubic-bezier(0,.67,.16,1);
 			opacity: 0.9;
 			overflow: hidden;
 			border-radius: 15px;
@@ -307,7 +307,7 @@ main {
 			padding: 20px 25px;
 			.blog-title {
 				margin-bottom: 200px;
-				font-size: 1.35rem;
+				font-size: 1.65rem;
 				font-weight: 700;
 				color: #464242;
 				grid-column: 1/6;
@@ -351,7 +351,7 @@ main {
 			&:hover {
 				color: #000 !important;
 				opacity: 1;
-				box-shadow: #b5cdddb4 0px 18px 25px;
+				box-shadow: #b5d0e2b4 0px 14px 20px;
 				transform: translateY(-7px);
 			}
 		}
