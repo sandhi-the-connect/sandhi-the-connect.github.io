@@ -564,6 +564,8 @@ a.blog-card-link {
         background-color: white;
         border-radius: 22px;
         padding: 20px 25px; }
+      #videos #grade-1 .vcard-link .grade1-1, #videos #grade-2 .vcard-link .grade1-1, #videos #grade-3 .vcard-link .grade1-1, #videos #grade-4 .vcard-link .grade1-1, #videos #grade-5 .vcard-link .grade1-1 {
+        background: url("../assets/"); }
       #videos #grade-1 .vcard-link .vcard-title, #videos #grade-2 .vcard-link .vcard-title, #videos #grade-3 .vcard-link .vcard-title, #videos #grade-4 .vcard-link .vcard-title, #videos #grade-5 .vcard-link .vcard-title {
         color: black;
         font-size: 1.8rem; }
