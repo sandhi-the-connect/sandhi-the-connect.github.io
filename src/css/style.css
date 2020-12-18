@@ -407,4 +407,6 @@ a.blog-card-link {
     main#team section .card-flex {
       justify-content: center !important; }
     main#team section .team-card {
+      margin-right: 0 !important; }
+    main#team section .team-card-role {
       margin-right: 0 !important; } }
