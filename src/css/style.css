@@ -201,7 +201,7 @@ main {
       margin: 30px 0; }
       main#team section h1.title {
         padding: 0;
-        margin: 12px 3px;
+        margin: 12px 5px;
         font-size: 2.8rem;
         font-weight: 600;
         color: #6F767B; }
@@ -222,25 +222,35 @@ main {
           padding: 30px 33px;
           position: relative; }
           main#team section div.card-flex div.team-card:hover {
-            box-shadow: #adc6d66e 0px 7px 15px;
+            box-shadow: #a4c1d479 0px 15px 20px;
             transform: translateY(-7px); }
           main#team section div.card-flex div.team-card .card-image {
-            width: 72px;
-            height: 72px;
+            width: 70px;
+            height: 70px;
             border-radius: 50%;
-            background-color: #7475d8;
             margin-bottom: 16px; }
+          main#team section div.card-flex div.team-card .naman {
+            background: url("../assets/team/naman.png"); }
+          main#team section div.card-flex div.team-card .kairon {
+            background: url("../assets/team/kairon.png"); }
+          main#team section div.card-flex div.team-card .swastika {
+            background: url("../assets/team/swastika.png"); }
+          main#team section div.card-flex div.team-card .shubhro {
+            background: url("../assets/team/shubhro.png"); }
+          main#team section div.card-flex div.team-card .santripta {
+            background: url("../assets/team/santripta.png"); }
           main#team section div.card-flex div.team-card .card-content {
             margin-left: 8px; }
             main#team section div.card-flex div.team-card .card-content .name {
               font-size: 1.7rem;
               font-weight: 600;
-              color: #727276; }
+              color: #606063; }
             main#team section div.card-flex div.team-card .card-content .designation {
-              font-size: 1.35rem;
+              font-size: 1.25rem;
               margin-top: 4px;
               font-weight: 500;
-              color: #9B9B9C; }
+              color: #9B9B9C;
+              margin-bottom: 12px; }
             main#team section div.card-flex div.team-card .card-content .socials {
               overflow: hidden;
               position: absolute;
@@ -249,10 +259,92 @@ main {
               flex-direction: row;
               flex-wrap: nowrap; }
               main#team section div.card-flex div.team-card .card-content .socials a {
-                font-size: 32px;
-                color: #FB7E7E;
+                transition: 0.35s;
+                font-size: 28px;
+                color: #e48181;
                 cursor: pointer;
                 margin-right: 14px; }
+                main#team section div.card-flex div.team-card .card-content .socials a:hover {
+                  color: #a75b5b;
+                  transform: scale(1.05); }
+        main#team section div.card-flex div.team-card-role {
+          transition: transform 0.5s cubic-bezier(0, 0.67, 0.16, 1), box-shadow 1.5s cubic-bezier(0, 0.67, 0.16, 1), -webkit-transform 1.2s cubic-bezier(0, 0.67, 0.16, 1);
+          width: 360px;
+          height: 220px;
+          background-color: white;
+          border-radius: 18px;
+          margin-right: 50px;
+          margin-bottom: 50px;
+          box-shadow: #adc6d66e 0px 7px 15px;
+          padding: 30px 33px;
+          position: relative; }
+          main#team section div.card-flex div.team-card-role:hover {
+            box-shadow: #a4c1d479 0px 15px 20px;
+            transform: translateY(-7px); }
+          main#team section div.card-flex div.team-card-role .card-image {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: #7475d8;
+            margin-bottom: 16px; }
+          main#team section div.card-flex div.team-card-role .anahita {
+            background: url("../assets/team/anahita.png"); }
+          main#team section div.card-flex div.team-card-role .jyotika {
+            background: url("../assets/team/jyotika.png"); }
+          main#team section div.card-flex div.team-card-role .kudrat {
+            background: url("../assets/team/kudrat.png"); }
+          main#team section div.card-flex div.team-card-role .paarth {
+            background: url("../assets/team/paarth.png"); }
+          main#team section div.card-flex div.team-card-role .shrey {
+            background: url("../assets/team/shrey.png"); }
+          main#team section div.card-flex div.team-card-role .ambi {
+            background: url("../assets/team/"); }
+          main#team section div.card-flex div.team-card-role .anisha {
+            background: url("../assets/team/"); }
+          main#team section div.card-flex div.team-card-role .kabir {
+            background: url("../assets/team/kabir.png"); }
+          main#team section div.card-flex div.team-card-role .shria {
+            background: url("../assets/team/shria.png"); }
+          main#team section div.card-flex div.team-card-role .sukhumjeet {
+            background: url("../assets/team/sukhumjeet.png"); }
+          main#team section div.card-flex div.team-card-role .ananya {
+            background: url("../assets/team/ananya.png"); }
+          main#team section div.card-flex div.team-card-role .khanak {
+            background: url("../assets/team/khanak.png"); }
+          main#team section div.card-flex div.team-card-role .medhya {
+            background: url("../assets/team/medhya.png"); }
+          main#team section div.card-flex div.team-card-role .samridhi {
+            background: url("../assets/team/samridhi.png"); }
+          main#team section div.card-flex div.team-card-role .tapasmi {
+            background: url("../assets/team/tapasmi.png"); }
+          main#team section div.card-flex div.team-card-role .card-content {
+            margin-left: 8px; }
+            main#team section div.card-flex div.team-card-role .card-content .name {
+              font-size: 1.7rem;
+              font-weight: 600;
+              color: #606063; }
+            main#team section div.card-flex div.team-card-role .card-content .designation {
+              font-size: 1.25rem;
+              margin-top: 4px;
+              font-weight: 500;
+              color: #9B9B9C;
+              margin-bottom: 12px; }
+            main#team section div.card-flex div.team-card-role .card-content .socials {
+              overflow: hidden;
+              position: absolute;
+              bottom: 24px;
+              display: flex;
+              flex-direction: row;
+              flex-wrap: nowrap; }
+              main#team section div.card-flex div.team-card-role .card-content .socials a {
+                transition: 0.35s;
+                font-size: 28px;
+                color: #e48181;
+                cursor: pointer;
+                margin-right: 14px; }
+                main#team section div.card-flex div.team-card-role .card-content .socials a:hover {
+                  color: #a75b5b;
+                  transform: scale(1.05); }
 
 a.blog-card-link {
   text-decoration: none;

@@ -227,7 +227,7 @@ main {
             h1.title
             {
                 padding: 0;
-				margin: 12px 3px;
+				margin: 12px 5px;
 				// margin-bottom: 25px !important;
                 font-size: 2.8rem;
                 font-weight: 600;
@@ -254,18 +254,22 @@ main {
                     padding: 30px 33px;
 					position: relative;
 					&:hover {
-						box-shadow:#adc6d66e 0px 7px 15px;
+						box-shadow:#a4c1d479 0px 15px 20px;
 						transform: translateY(-7px);
 					}
 
                     .card-image
                     {
-                        width: 72px;
-                        height: 72px;
+                        width: 70px;
+                        height: 70px;
                         border-radius: 50%;
-                        background-color: #7475d8;
-                        margin-bottom: 16px;
-                    }
+						margin-bottom: 16px;
+					}
+					.naman{background: url("../assets/team/naman.png");}
+					.kairon{background: url("../assets/team/kairon.png");}
+					.swastika{background: url("../assets/team/swastika.png");}
+					.shubhro{background: url("../assets/team/shubhro.png");}
+					.santripta{background: url("../assets/team/santripta.png");}
 
                     .card-content
                     {
@@ -275,15 +279,16 @@ main {
                         {
                             font-size: 1.7rem;
                             font-weight: 600;
-                            color: #727276;
+                            color: #606063;
                         }
                         
                         .designation
                         {
-                            font-size: 1.35rem;
+                            font-size: 1.25rem;
                             margin-top: 4px;
                             font-weight: 500;
-                            color: #9B9B9C;
+							color: #9B9B9C;
+							margin-bottom: 12px;
                         }
 
                         .socials
@@ -297,11 +302,102 @@ main {
 
                             a
                             {
-                                font-size: 32px;
-                                color: #FB7E7E;
+								transition: 0.35s;
+                                font-size: 28px;
+                                color: #e48181;
                                 cursor: pointer;
-                                margin-right: 14px;
-                            }
+								margin-right: 14px;
+								&:hover{
+									color: #a75b5b;	
+									transform: scale(1.05);							
+								}
+							}							
+                        }
+                    }
+				}
+				div.team-card-role
+                {
+					transition: transform 0.5s cubic-bezier(0,.67,.16,1), box-shadow 1.5s cubic-bezier(0,.67,.16,1), -webkit-transform 1.2s cubic-bezier(0,.67,.16,1);
+                    width: 360px;
+                    height: 220px;
+                    background-color: white;
+                    border-radius: 18px;
+                    margin-right: 50px;
+                    margin-bottom: 50px;
+                    box-shadow:#adc6d66e 0px 7px 15px;
+                    padding: 30px 33px;
+					position: relative;
+					&:hover {
+						box-shadow:#a4c1d479 0px 15px 20px;
+						transform: translateY(-7px);
+					}
+
+                    .card-image
+                    {
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 50%;
+                        background-color: #7475d8;
+                        margin-bottom: 16px;
+					}
+					.anahita{background: url("../assets/team/anahita.png");}
+					.jyotika{background: url("../assets/team/jyotika.png");}
+					.kudrat{background: url("../assets/team/kudrat.png");}
+					.paarth{background: url("../assets/team/paarth.png");}
+					.shrey{background: url("../assets/team/shrey.png");}
+					.ambi{background: url("../assets/team/");}
+					.anisha{background: url("../assets/team/");}
+					.kabir{background: url("../assets/team/kabir.png");}
+					.shria{background: url("../assets/team/shria.png");}
+					.sukhumjeet{background: url("../assets/team/sukhumjeet.png");}
+					.ananya{background: url("../assets/team/ananya.png");}
+					.khanak{background: url("../assets/team/khanak.png");}
+					.medhya{background: url("../assets/team/medhya.png");}
+					.samridhi{background: url("../assets/team/samridhi.png");}
+					.tapasmi{background: url("../assets/team/tapasmi.png");}
+
+                    .card-content
+                    {
+                        margin-left: 8px;
+
+                        .name
+                        {
+                            font-size: 1.7rem;
+                            font-weight: 600;
+                            color: #606063;
+                        }
+                        
+                        .designation
+                        {
+                            font-size: 1.25rem;
+                            margin-top: 4px;
+                            font-weight: 500;
+							color: #9B9B9C;
+							margin-bottom: 12px;
+                        }
+
+                        .socials
+                        {
+                            overflow: hidden;
+                            position: absolute;
+                            bottom: 24px;
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: nowrap;
+
+                            a
+                            {
+								transition: 0.35s;
+                                font-size: 28px;
+                                color: #e48181;
+                                cursor: pointer;
+								margin-right: 14px;
+								&:hover{
+									color: #a75b5b;	
+									transform: scale(1.05);							
+								}
+							}
+							
                         }
                     }
                 }
