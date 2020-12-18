@@ -138,7 +138,8 @@ main {
       background-color: #fdfdfd;
       padding: 20px 25px; }
       main section .blog-card .blog-title {
-        font-size: 1.45rem;
+        margin-bottom: 200px;
+        font-size: 1.35rem;
         font-weight: 700;
         color: #464242;
         grid-column: 1/6; }
@@ -183,8 +184,8 @@ main {
       main section .blog-card:hover {
         color: #000 !important;
         opacity: 1;
-        box-shadow: #9bb1c0b4 0px 18px 25px;
-        transform: translateY(-10px); }
+        box-shadow: #b5cdddb4 0px 18px 25px;
+        transform: translateY(-7px); }
   main section#blog-tiles {
     display: grid;
     grid-template-columns: repeat(auto-fill, 370px);
@@ -200,8 +201,8 @@ main {
       margin: 30px 0; }
       main#team section h1.title {
         padding: 0;
-        margin: 8px 0;
-        font-size: 2.6rem;
+        margin: 12px 3px;
+        font-size: 2.8rem;
         font-weight: 600;
         color: #6F767B; }
       main#team section div.card-flex {
@@ -210,29 +211,33 @@ main {
         flex-direction: row;
         flex-wrap: wrap; }
         main#team section div.card-flex div.team-card {
+          transition: transform 0.5s cubic-bezier(0, 0.67, 0.16, 1), box-shadow 1.5s cubic-bezier(0, 0.67, 0.16, 1), -webkit-transform 1.2s cubic-bezier(0, 0.67, 0.16, 1);
           width: 360px;
-          height: 300px;
+          height: 280px;
           background-color: white;
           border-radius: 18px;
           margin-right: 50px;
           margin-bottom: 50px;
-          box-shadow: #180f301a 3px 3px 8px;
+          box-shadow: #adc6d66e 0px 7px 15px;
           padding: 30px 33px;
           position: relative; }
+          main#team section div.card-flex div.team-card:hover {
+            box-shadow: #adc6d66e 0px 7px 15px;
+            transform: translateY(-7px); }
           main#team section div.card-flex div.team-card .card-image {
-            width: 80px;
-            height: 80px;
+            width: 72px;
+            height: 72px;
             border-radius: 50%;
             background-color: #7475d8;
             margin-bottom: 16px; }
           main#team section div.card-flex div.team-card .card-content {
             margin-left: 8px; }
             main#team section div.card-flex div.team-card .card-content .name {
-              font-size: 1.8rem;
-              font-weight: 500;
+              font-size: 1.7rem;
+              font-weight: 600;
               color: #727276; }
             main#team section div.card-flex div.team-card .card-content .designation {
-              font-size: 1.1rem;
+              font-size: 1.35rem;
               margin-top: 4px;
               font-weight: 500;
               color: #9B9B9C; }
@@ -245,7 +250,7 @@ main {
               flex-wrap: nowrap; }
               main#team section div.card-flex div.team-card .card-content .socials a {
                 font-size: 32px;
-                color: #8989d4;
+                color: #FB7E7E;
                 cursor: pointer;
                 margin-right: 14px; }
 
@@ -296,7 +301,7 @@ a.blog-card-link {
     padding: 28px 30px; }
     main header #title {
       margin-top: 12px;
-      font-size: 1.35rem; }
+      font-size: 1.5rem; }
     main header #headline {
       font-size: 1.6rem;
       width: 100%; }
