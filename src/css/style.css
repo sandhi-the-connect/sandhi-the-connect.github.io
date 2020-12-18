@@ -554,18 +554,42 @@ a.blog-card-link {
     #videos #grade-1.active, #videos #grade-2.active, #videos #grade-3.active, #videos #grade-4.active, #videos #grade-5.active {
       display: flex; }
     #videos #grade-1 .vcard-link, #videos #grade-2 .vcard-link, #videos #grade-3 .vcard-link, #videos #grade-4 .vcard-link, #videos #grade-5 .vcard-link {
-      color: black;
+      color: white;
       text-decoration: none;
       margin-right: 35px;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      font-weight: 700; }
       #videos #grade-1 .vcard-link .video-card, #videos #grade-2 .vcard-link .video-card, #videos #grade-3 .vcard-link .video-card, #videos #grade-4 .vcard-link .video-card, #videos #grade-5 .vcard-link .video-card {
+        transition: transform 0.5s cubic-bezier(0, 0.67, 0.16, 1), box-shadow 0.5s cubic-bezier(0, 0.67, 0.16, 1);
         width: 350px;
         height: 260px;
-        background-color: white;
         border-radius: 22px;
-        padding: 20px 25px; }
+        padding: 20px 25px;
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.75);
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        #videos #grade-1 .vcard-link .video-card:hover, #videos #grade-2 .vcard-link .video-card:hover, #videos #grade-3 .vcard-link .video-card:hover, #videos #grade-4 .vcard-link .video-card:hover, #videos #grade-5 .vcard-link .video-card:hover {
+          transform: translateY(-7px);
+          box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5); }
       #videos #grade-1 .vcard-link .grade1-1, #videos #grade-2 .vcard-link .grade1-1, #videos #grade-3 .vcard-link .grade1-1, #videos #grade-4 .vcard-link .grade1-1, #videos #grade-5 .vcard-link .grade1-1 {
-        background: url("../assets/"); }
+        background: url("../assets/vlog/numbers.png"); }
+      #videos #grade-1 .vcard-link .grade1-2, #videos #grade-2 .vcard-link .grade1-2, #videos #grade-3 .vcard-link .grade1-2, #videos #grade-4 .vcard-link .grade1-2, #videos #grade-5 .vcard-link .grade1-2 {
+        background: url("../assets/vlog/festivals.png"); }
+      #videos #grade-1 .vcard-link .grade2-1, #videos #grade-2 .vcard-link .grade2-1, #videos #grade-3 .vcard-link .grade2-1, #videos #grade-4 .vcard-link .grade2-1, #videos #grade-5 .vcard-link .grade2-1 {
+        background: url("../assets/vlog/add.png"); }
+      #videos #grade-1 .vcard-link .grade2-2, #videos #grade-2 .vcard-link .grade2-2, #videos #grade-3 .vcard-link .grade2-2, #videos #grade-4 .vcard-link .grade2-2, #videos #grade-5 .vcard-link .grade2-2 {
+        background: url("../assets/vlog/solar.png"); }
+      #videos #grade-1 .vcard-link .grade3-1, #videos #grade-2 .vcard-link .grade3-1, #videos #grade-3 .vcard-link .grade3-1, #videos #grade-4 .vcard-link .grade3-1, #videos #grade-5 .vcard-link .grade3-1 {
+        background: url("../assets/vlog/looking.png"); }
+      #videos #grade-1 .vcard-link .grade4-1, #videos #grade-2 .vcard-link .grade4-1, #videos #grade-3 .vcard-link .grade4-1, #videos #grade-4 .vcard-link .grade4-1, #videos #grade-5 .vcard-link .grade4-1 {
+        background: url("../assets/vlog/nandu.png"); }
+      #videos #grade-1 .vcard-link .grade4-2, #videos #grade-2 .vcard-link .grade4-2, #videos #grade-3 .vcard-link .grade4-2, #videos #grade-4 .vcard-link .grade4-2, #videos #grade-5 .vcard-link .grade4-2 {
+        background: url("../assets/vlog/bhopal.png"); }
+      #videos #grade-1 .vcard-link .grade5-1, #videos #grade-2 .vcard-link .grade5-1, #videos #grade-3 .vcard-link .grade5-1, #videos #grade-4 .vcard-link .grade5-1, #videos #grade-5 .vcard-link .grade5-1 {
+        background: url("../assets/vlog/supersenses.png"); }
+      #videos #grade-1 .vcard-link .grade5-2, #videos #grade-2 .vcard-link .grade5-2, #videos #grade-3 .vcard-link .grade5-2, #videos #grade-4 .vcard-link .grade5-2, #videos #grade-5 .vcard-link .grade5-2 {
+        background: url("../assets/vlog/shapes.png"); }
       #videos #grade-1 .vcard-link .vcard-title, #videos #grade-2 .vcard-link .vcard-title, #videos #grade-3 .vcard-link .vcard-title, #videos #grade-4 .vcard-link .vcard-title, #videos #grade-5 .vcard-link .vcard-title {
-        color: black;
+        color: #ffffff;
         font-size: 1.8rem; }
