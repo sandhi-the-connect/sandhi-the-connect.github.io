@@ -331,7 +331,9 @@ main {
           margin-bottom: 50px;
           box-shadow: #adc6d66e 0px 7px 15px;
           padding: 30px 33px;
-          position: relative; }
+          position: relative;
+          overflow: hidden;
+          cursor: pointer; }
           main#team section div.card-flex div.team-card:hover {
             box-shadow: #a4c1d479 0px 15px 20px;
             transform: translateY(-7px); }
@@ -378,6 +380,22 @@ main {
                 main#team section div.card-flex div.team-card .card-content .socials a:hover {
                   color: #a75b5b;
                   transform: scale(1.05); }
+          main#team section div.card-flex div.team-card.active .bio {
+            opacity: 1;
+            left: 0; }
+          main#team section div.card-flex div.team-card .bio {
+            width: 100%;
+            height: 100%;
+            left: -400px;
+            top: 0;
+            opacity: 0;
+            background-color: white;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            transition: opacity 0.3s, left 0.4s;
+            font-size: 1.8rem; }
         main#team section div.card-flex div.team-card-role {
           transition: transform 0.5s cubic-bezier(0, 0.67, 0.16, 1), box-shadow 1.5s cubic-bezier(0, 0.67, 0.16, 1), -webkit-transform 1.2s cubic-bezier(0, 0.67, 0.16, 1);
           width: 360px;
