@@ -312,7 +312,7 @@ main {
       margin: 30px 0; }
       main#team section h1.title {
         padding: 0;
-        margin: 12px 5px;
+        margin: 12px 8px;
         font-size: 2.8rem;
         font-weight: 600;
         color: #6F767B; }
@@ -376,26 +376,32 @@ main {
                 font-size: 28px;
                 color: #e48181;
                 cursor: pointer;
-                margin-right: 14px; }
+                margin-right: 14px;
+                z-index: 1; }
                 main#team section div.card-flex div.team-card .card-content .socials a:hover {
                   color: #a75b5b;
                   transform: scale(1.05); }
+          main#team section div.card-flex div.team-card.active a {
+            opacity: 0; }
           main#team section div.card-flex div.team-card.active .bio {
             opacity: 1;
             left: 0; }
           main#team section div.card-flex div.team-card .bio {
             width: 100%;
             height: 100%;
-            left: -400px;
+            left: 0;
             top: 0;
             opacity: 0;
             background-color: white;
+            color: #7b7b8f;
             justify-content: center;
             display: flex;
             align-items: center;
             position: absolute;
-            transition: opacity 0.3s, left 0.4s;
-            font-size: 1.8rem; }
+            transition: opacity 0.35s;
+            padding: 25px;
+            text-align: center;
+            font-size: 1.35rem; }
         main#team section div.card-flex div.team-card-role {
           transition: transform 0.5s cubic-bezier(0, 0.67, 0.16, 1), box-shadow 1.5s cubic-bezier(0, 0.67, 0.16, 1), -webkit-transform 1.2s cubic-bezier(0, 0.67, 0.16, 1);
           width: 360px;
@@ -406,7 +412,9 @@ main {
           margin-bottom: 50px;
           box-shadow: #adc6d66e 0px 7px 15px;
           padding: 30px 33px;
-          position: relative; }
+          position: relative;
+          overflow: hidden;
+          cursor: pointer; }
           main#team section div.card-flex div.team-card-role:hover {
             box-shadow: #a4c1d479 0px 15px 20px;
             transform: translateY(-7px); }
@@ -427,9 +435,9 @@ main {
           main#team section div.card-flex div.team-card-role .shrey {
             background: url("../assets/team/shrey.png"); }
           main#team section div.card-flex div.team-card-role .ambi {
-            background: url("../assets/team/"); }
+            background: url("../assets/team/ambi.png"); }
           main#team section div.card-flex div.team-card-role .anisha {
-            background: url("../assets/team/"); }
+            background: url("../assets/team/anisha.png"); }
           main#team section div.card-flex div.team-card-role .kabir {
             background: url("../assets/team/kabir.png"); }
           main#team section div.card-flex div.team-card-role .shria {
@@ -470,10 +478,32 @@ main {
                 font-size: 28px;
                 color: #e48181;
                 cursor: pointer;
-                margin-right: 14px; }
+                margin-right: 14px;
+                z-index: 1; }
                 main#team section div.card-flex div.team-card-role .card-content .socials a:hover {
                   color: #a75b5b;
                   transform: scale(1.05); }
+          main#team section div.card-flex div.team-card-role.active a {
+            opacity: 0; }
+          main#team section div.card-flex div.team-card-role.active .bio {
+            opacity: 1;
+            left: 0; }
+          main#team section div.card-flex div.team-card-role .bio {
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            background-color: white;
+            color: #7b7b8f;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            transition: opacity 0.35s;
+            padding: 25px;
+            text-align: center;
+            font-size: 1.3rem; }
 
 a.blog-card-link {
   text-decoration: none;
@@ -554,7 +584,7 @@ a.blog-card-link {
       margin-bottom: 24px;
       font-size: 1.2rem;
       padding: 12px 10px;
-      border-radius: 18px;
+      border-radius: 15px;
       background-color: #626286;
       transition-duration: 0.3s;
       color: white;
@@ -605,6 +635,8 @@ a.blog-card-link {
         background: url("../assets/vlog/solar.png"); }
       #videos #grade-1 .vcard-link .grade3-1, #videos #grade-2 .vcard-link .grade3-1, #videos #grade-3 .vcard-link .grade3-1, #videos #grade-4 .vcard-link .grade3-1, #videos #grade-5 .vcard-link .grade3-1 {
         background: url("../assets/vlog/looking.png"); }
+      #videos #grade-1 .vcard-link .grade3-2, #videos #grade-2 .vcard-link .grade3-2, #videos #grade-3 .vcard-link .grade3-2, #videos #grade-4 .vcard-link .grade3-2, #videos #grade-5 .vcard-link .grade3-2 {
+        background: url("../assets/vlog/food.png"); }
       #videos #grade-1 .vcard-link .grade4-1, #videos #grade-2 .vcard-link .grade4-1, #videos #grade-3 .vcard-link .grade4-1, #videos #grade-4 .vcard-link .grade4-1, #videos #grade-5 .vcard-link .grade4-1 {
         background: url("../assets/vlog/nandu.png"); }
       #videos #grade-1 .vcard-link .grade4-2, #videos #grade-2 .vcard-link .grade4-2, #videos #grade-3 .vcard-link .grade4-2, #videos #grade-4 .vcard-link .grade4-2, #videos #grade-5 .vcard-link .grade4-2 {
@@ -627,15 +659,22 @@ a.blog-card-link {
       justify-content: center; }
       section#videos #grade-1 a, section#videos #grade-2 a, section#videos #grade-3 a, section#videos #grade-4 a, section#videos #grade-5 a {
         margin-right: 0 !important; }
-    section#videos #grade-select div #big {
-      display: none; }
-    section#videos #grade-select div {
-      width: 35px;
-      text-align: center;
-      border-radius: 2px; }
-    section#videos #grade-select span {
-      margin-right: 17px;
-      margin-bottom: 24px;
-      font-size: 1.2rem;
-      padding: 12px 10px;
-      display: block; } }
+    section#videos #grade-select {
+      margin-left: 50px; }
+      section#videos #grade-select div #big {
+        display: none; }
+      section#videos #grade-select div {
+        width: 35px;
+        text-align: center;
+        border-radius: 5px; }
+      section#videos #grade-select #mobile {
+        font-size: 36px;
+        font-weight: 600;
+        color: #6e757e;
+        width: 100%; }
+      section#videos #grade-select span {
+        margin-right: 17px;
+        margin-bottom: 24px;
+        font-size: 1.2rem;
+        padding: 12px 10px;
+        display: block; } }
