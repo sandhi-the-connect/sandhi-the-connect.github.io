@@ -528,7 +528,7 @@ a.blog-card-link {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
     margin-bottom: 30px; }
     #videos #grade-select div {
@@ -545,6 +545,11 @@ a.blog-card-link {
         background-color: #1d1d27; }
       #videos #grade-select div:hover {
         background-color: #23232E; }
+      #videos #grade-select div #big {
+        display: inline;
+        margin: none; }
+    #videos #grade-select span {
+      display: none; }
   #videos #grade-1, #videos #grade-2, #videos #grade-3, #videos #grade-4, #videos #grade-5 {
     display: none;
     flex-direction: row;
@@ -592,4 +597,27 @@ a.blog-card-link {
         background: url("../assets/vlog/shapes.png"); }
       #videos #grade-1 .vcard-link .vcard-title, #videos #grade-2 .vcard-link .vcard-title, #videos #grade-3 .vcard-link .vcard-title, #videos #grade-4 .vcard-link .vcard-title, #videos #grade-5 .vcard-link .vcard-title {
         color: #ffffff;
-        font-size: 1.8rem; }
+        font-size: 1.8rem;
+        width: 100%;
+        text-align: center; }
+
+@media (max-width: 700px) {
+  section#videos {
+    padding: 42px 4px;
+    overflow-x: auto; }
+    section#videos #grade-1, section#videos #grade-2, section#videos #grade-3, section#videos #grade-4, section#videos #grade-5 {
+      justify-content: center; }
+      section#videos #grade-1 a, section#videos #grade-2 a, section#videos #grade-3 a, section#videos #grade-4 a, section#videos #grade-5 a {
+        margin-right: 0 !important; }
+    section#videos #grade-select div #big {
+      display: none; }
+    section#videos #grade-select div {
+      width: 35px;
+      text-align: center;
+      border-radius: 2px; }
+    section#videos #grade-select span {
+      margin-right: 17px;
+      margin-bottom: 24px;
+      font-size: 1.2rem;
+      padding: 12px 10px;
+      display: block; } }

@@ -667,7 +667,7 @@ a.blog-card-link {
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-start;
-		align-items: flex-start;
+		align-items: center;
 		flex-wrap: wrap;
 		margin-bottom: 30px;
 
@@ -692,6 +692,17 @@ a.blog-card-link {
 			{
 				background-color: #23232E;
 			}
+
+			#big
+			{
+				display: inline;
+				margin: none;
+			}
+		}
+
+		span
+		{
+			display: none;
 		}
 	}
 
@@ -746,7 +757,54 @@ a.blog-card-link {
 			.vcard-title
 			{
 				color: #ffffff;
-				font-size: 1.8rem; 
+				font-size: 1.8rem;
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
+}
+
+@media (max-width: 700px)
+{
+	section#videos
+	{
+		padding: 42px 4px;
+
+		overflow-x: auto;
+
+		#grade-1,#grade-2,#grade-3,#grade-4,#grade-5
+		{
+			justify-content: center;
+			
+			a
+			{
+				margin-right: 0 !important;
+			}
+		}
+
+		#grade-select
+		{
+			div #big
+			{
+				display: none;
+			}
+
+			div
+			{
+				width: 35px;
+
+				text-align: center;
+				border-radius: 2px;
+			}
+
+			span
+			{
+				margin-right: 17px;
+				margin-bottom: 24px;
+				font-size: 1.2rem;
+				padding: 12px 10px;
+				display: block;
 			}
 		}
 	}
