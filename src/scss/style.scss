@@ -498,6 +498,10 @@ main {
 						padding: 25px;
 						text-align: center;
 						font-size: 1.35rem;
+						user-select: none;
+						-moz-user-select: none;
+						-webkit-user-select: none;
+						-ms-user-select: none;
 					}
 				}
 				div.team-card-role
@@ -667,7 +671,7 @@ a.blog-card-link {
 		}
 	}
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
 	main {
 		header {
 			padding: 36px 96px;
@@ -863,7 +867,7 @@ a.blog-card-link {
 
 			div
 			{
-				width: 35px;
+				width: 45px;
 
 				text-align: center;
 				border-radius: 5px;
@@ -874,6 +878,7 @@ a.blog-card-link {
 				font-weight: 600;
 				color: #6e757e;
 				width: 100%;
+				padding: 12px 0;
 			}
 
 			span
