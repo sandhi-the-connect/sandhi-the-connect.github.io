@@ -401,7 +401,11 @@ main {
             transition: opacity 0.35s;
             padding: 25px;
             text-align: center;
-            font-size: 1.35rem; }
+            font-size: 1.35rem;
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none; }
         main#team section div.card-flex div.team-card-role {
           transition: transform 0.5s cubic-bezier(0, 0.67, 0.16, 1), box-shadow 1.5s cubic-bezier(0, 0.67, 0.16, 1), -webkit-transform 1.2s cubic-bezier(0, 0.67, 0.16, 1);
           width: 360px;
@@ -536,7 +540,7 @@ a.blog-card-link {
     nav.open span {
       display: none; } }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
   main header {
     padding: 36px 96px; }
     main header #title {
@@ -664,14 +668,15 @@ a.blog-card-link {
       section#videos #grade-select div #big {
         display: none; }
       section#videos #grade-select div {
-        width: 35px;
+        width: 45px;
         text-align: center;
         border-radius: 5px; }
       section#videos #grade-select #mobile {
         font-size: 36px;
         font-weight: 600;
         color: #6e757e;
-        width: 100%; }
+        width: 100%;
+        padding: 12px 0; }
       section#videos #grade-select span {
         margin-right: 17px;
         margin-bottom: 24px;
