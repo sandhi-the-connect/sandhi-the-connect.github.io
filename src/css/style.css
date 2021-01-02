@@ -726,35 +726,42 @@ a.blog-card-link {
 
 #problems {
   background-color: #f1cccc;
-  top: 0;
-  margin-top: 0px;
-  padding: 50px 120px; }
+  margin-top: 0px; }
+  #problems .problem-h {
+    color: #705353;
+    font-size: 48px;
+    margin-bottom: -20px !important;
+    margin-left: 65px; }
   #problems #problems-tiled {
     display: flex;
     flex-wrap: wrap; }
     #problems #problems-tiled .box {
-      margin: 0px 40px;
-      width: 40%; }
+      width: 45%;
+      margin: 10px;
+      padding: 10px; }
+      #problems #problems-tiled .box .icon {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: #7475d8;
+        margin-bottom: -15px; }
       #problems #problems-tiled .box .head {
         color: #fff;
-        font-size: 36px;
-        font-weight: 700; }
-      #problems #problems-tiled .box .line {
-        width: 50%;
-        border: 0;
-        height: 2px;
-        background-color: #6730307e;
-        margin-top: -10px;
-        margin-bottom: 25px; }
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 0px; }
       #problems #problems-tiled .box .desc {
         color: #673030;
-        font-size: 19px; }
+        font-size: 16px; }
 
-@media only screen and (max-width: 599px) {
-  #who-what-why {
+@media only screen and (max-width: 900px) {
+  #problems-tiled {
     flex-direction: column;
     height: 100%;
     padding: 50px 20px; }
-    #who-what-why .box {
-      text-align: center;
-      margin: 20px 8px; } }
+    #problems-tiled .problem-h {
+      color: #705353;
+      font-size: 32px !important; }
+    #problems-tiled .box {
+      margin: 20px 8px;
+      width: 100% !important; } }
