@@ -901,7 +901,7 @@ a.blog-card-link {
 
 #who-what-why{
 	display: flex;
-	background-color: #F9E7E7;
+	background-color: #f5d2d2;
 	top: 0;
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -956,42 +956,30 @@ a.blog-card-link {
 	}	
 }
 
-#problems{	
-	background-color:#f1cccc;
 
-	.problem-h{
-		color: #705353;
-		font-size: 48px;
-	}
+#problems-tiled{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 
-	#problems-tiled{
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-evenly;
+	.box{
+		width: 40%;
 
-		.box{	
-			border: 1px solid black;		
-			width: 45%;
+		.icons{
+			width: 70px;
+			height: 70px;
+			border-radius: 50%;
+			background-color: #7475d8;
+		}
 
-			.icon{
-				width: 70px;
-				height: 70px;
-				border-radius: 50%;
-				background-color: #7475d8;
-				margin-bottom: -15px;
-			}
+		.head{
+			font-size: 40px;
+			text-align: left;
+		}
 
-			.head{
-				color: #fff;
-				font-size: 28px;
-				font-weight: 700;
-				margin-bottom: 0px;
-			}
-
-			.desc{
-				color: #673030;
-				font-size: 16px;
-			}
+		.desc{
+			font-size: 19px;
+			text-align: left;
 		}
 	}
 }
@@ -999,11 +987,13 @@ a.blog-card-link {
 @media only screen and (max-width: 800px) {
 	#problems-tiled{
 		flex-direction: column;
+		height: 100%;
+		padding: 50px 30px;
 
-		.box{			
-			width: 95% !important;
-			margin: 10px;
-			padding: 10px;
+		.box{
+			text-align: center;
+			margin: 20px 8px;
+			width: 95%;
 		}
-	}
+	}	
 }
