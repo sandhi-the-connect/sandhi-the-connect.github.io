@@ -19,6 +19,9 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #c97171; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   margin: 0;
   background-color: #F4F7F9;
@@ -686,7 +689,7 @@ a.blog-card-link {
 
 #who-what-why {
   display: flex;
-  background-color: #dfa6a6;
+  background-color: #F9E7E7;
   top: 0;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -695,16 +698,16 @@ a.blog-card-link {
     margin: 0px 40px;
     width: 33%; }
     #who-what-why .box .head {
-      color: #fff;
+      color: #bba1a1;
       font-size: 36px;
       text-align: center;
       font-weight: 700; }
     #who-what-why .box .line {
-      transition: 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      transition: 0.25s cubic-bezier(0.17, 0.67, 0.83, 0.67);
       width: 50%;
       border: 0;
       height: 2px;
-      background-color: #6730307e;
+      background-color: #67303041;
       margin-top: -10px;
       margin-bottom: 26px; }
     #who-what-why .box:hover .line {
@@ -714,7 +717,7 @@ a.blog-card-link {
       font-size: 19px;
       text-align: center; }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 800px) {
   #who-what-why {
     flex-direction: column;
     height: 100%;
@@ -725,20 +728,17 @@ a.blog-card-link {
       width: 90%; } }
 
 #problems {
-  background-color: #f1cccc;
-  margin-top: 0px; }
+  background-color: #f1cccc; }
   #problems .problem-h {
     color: #705353;
-    font-size: 48px;
-    margin-bottom: -20px !important;
-    margin-left: 65px; }
+    font-size: 48px; }
   #problems #problems-tiled {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
     #problems #problems-tiled .box {
-      width: 45%;
-      margin: 10px;
-      padding: 10px; }
+      border: 1px solid black;
+      width: 45%; }
       #problems #problems-tiled .box .icon {
         width: 70px;
         height: 70px;
@@ -754,14 +754,10 @@ a.blog-card-link {
         color: #673030;
         font-size: 16px; }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
   #problems-tiled {
-    flex-direction: column;
-    height: 100%;
-    padding: 50px 20px; }
-    #problems-tiled .problem-h {
-      color: #705353;
-      font-size: 32px !important; }
+    flex-direction: column; }
     #problems-tiled .box {
-      margin: 20px 8px;
-      width: 100% !important; } }
+      width: 95% !important;
+      margin: 10px;
+      padding: 10px; } }
