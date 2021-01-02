@@ -683,3 +683,37 @@ a.blog-card-link {
         font-size: 1.2rem;
         padding: 12px 10px;
         display: block; } }
+
+#who-what-why {
+  display: flex;
+  background-color: #DFABAB;
+  top: 0;
+  margin-top: 0px;
+  padding: 50px 120px; }
+  #who-what-why .box {
+    margin: 0px 40px; }
+    #who-what-why .box .head {
+      color: #fff;
+      font-size: 36px;
+      text-align: center;
+      font-weight: 700; }
+    #who-what-why .box .line {
+      width: 50%;
+      border: 0;
+      height: 2px;
+      background-color: #6730307e;
+      margin-top: -10px;
+      margin-bottom: 25px; }
+    #who-what-why .box .desc {
+      color: #673030;
+      font-size: 19px;
+      text-align: center; }
+
+@media only screen and (max-width: 599px) {
+  #who-what-why {
+    flex-direction: column;
+    height: 100%;
+    padding: 50px 20px; }
+    #who-what-why .box {
+      text-align: center;
+      margin: 20px 8px; } }

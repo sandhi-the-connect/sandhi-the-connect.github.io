@@ -892,3 +892,51 @@ a.blog-card-link {
 		}
 	}
 }
+
+#who-what-why{
+	display: flex;
+	background-color: #DFABAB;
+	top: 0;
+	margin-top: 0px;
+	padding: 50px 120px;
+
+	.box{
+		margin: 0px 40px;
+
+		.head{
+			color: #fff;
+			font-size: 36px;
+			text-align: center;
+			font-weight: 700;
+		}
+
+		.line{
+			width: 50%;
+			border: 0;
+    		height: 2px;	
+			background-color: #6730307e;
+			margin-top: -10px;
+			margin-bottom: 25px;
+		}
+
+		.desc{
+			color: #673030;
+			font-size: 19px;
+			text-align: center;
+		}
+	}
+
+}
+
+@media only screen and (max-width: 599px) {
+	#who-what-why{
+		flex-direction: column;
+		height: 100%;
+		padding: 50px 20px;
+
+		.box{
+			text-align: center;
+			margin: 20px 8px;
+		}
+	}	
+}
