@@ -728,6 +728,9 @@ a.blog-card-link {
       width: 90%; } }
 
 #problems-tiled {
+  padding: 0; }
+
+#problems-tiled {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around; }
@@ -747,9 +750,11 @@ a.blog-card-link {
 
 @media only screen and (max-width: 800px) {
   #problems-tiled {
+    padding: 0; }
+  #problems-tiled {
+    display: flex;
     flex-direction: column;
-    height: 100%;
-    padding: 50px 30px; }
+    flex-wrap: wrap; }
     #problems-tiled .box {
       text-align: center;
       margin: 20px 8px;

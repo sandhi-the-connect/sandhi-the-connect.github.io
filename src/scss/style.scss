@@ -956,6 +956,9 @@ a.blog-card-link {
 	}	
 }
 
+#problems-tiled{
+	padding: 0;
+}
 
 #problems-tiled{
 	display: flex;
@@ -986,9 +989,12 @@ a.blog-card-link {
 
 @media only screen and (max-width: 800px) {
 	#problems-tiled{
+		padding: 0;
+	}
+	#problems-tiled{
+		display: flex;
 		flex-direction: column;
-		height: 100%;
-		padding: 50px 30px;
+		flex-wrap: wrap;
 
 		.box{
 			text-align: center;
