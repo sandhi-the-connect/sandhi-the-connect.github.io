@@ -686,28 +686,69 @@ a.blog-card-link {
 
 #who-what-why {
   display: flex;
-  background-color: #DFABAB;
+  background-color: #dfa6a6;
   top: 0;
   margin-top: 0px;
+  margin-bottom: 0px;
   padding: 50px 120px; }
   #who-what-why .box {
-    margin: 0px 40px; }
+    margin: 0px 40px;
+    width: 33%; }
     #who-what-why .box .head {
       color: #fff;
       font-size: 36px;
       text-align: center;
       font-weight: 700; }
     #who-what-why .box .line {
+      transition: 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
       width: 50%;
       border: 0;
       height: 2px;
       background-color: #6730307e;
       margin-top: -10px;
-      margin-bottom: 25px; }
+      margin-bottom: 26px; }
+    #who-what-why .box:hover .line {
+      width: 60%; }
     #who-what-why .box .desc {
-      color: #673030;
+      color: #423232;
       font-size: 19px;
       text-align: center; }
+
+@media only screen and (max-width: 599px) {
+  #who-what-why {
+    flex-direction: column;
+    height: 100%;
+    padding: 50px 30px; }
+    #who-what-why .box {
+      text-align: center;
+      margin: 20px 8px;
+      width: 90%; } }
+
+#problems {
+  background-color: #f1cccc;
+  top: 0;
+  margin-top: 0px;
+  padding: 50px 120px; }
+  #problems #problems-tiled {
+    display: flex;
+    flex-wrap: wrap; }
+    #problems #problems-tiled .box {
+      margin: 0px 40px;
+      width: 40%; }
+      #problems #problems-tiled .box .head {
+        color: #fff;
+        font-size: 36px;
+        font-weight: 700; }
+      #problems #problems-tiled .box .line {
+        width: 50%;
+        border: 0;
+        height: 2px;
+        background-color: #6730307e;
+        margin-top: -10px;
+        margin-bottom: 25px; }
+      #problems #problems-tiled .box .desc {
+        color: #673030;
+        font-size: 19px; }
 
 @media only screen and (max-width: 599px) {
   #who-what-why {
