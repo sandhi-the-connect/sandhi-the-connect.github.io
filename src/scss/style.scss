@@ -915,7 +915,7 @@ a.blog-card-link {
 			color: #bba1a1;
 			font-size: 36px;
 			text-align: center;
-			font-weight: 700;
+			font-weight: 600;
 		}
 
 		.line{
@@ -950,39 +950,53 @@ a.blog-card-link {
 
 		.box{
 			text-align: center;
-			margin: 20px 8px;
+			margin: 20px auto;
 			width: 90%;
 		}
 	}	
 }
 
 .problem{
-	background-color: #FAD5D5;
+	background-color: #eec8c8;
 	margin-top: 0;
+	size: 0vh;
+
+	.pheading{
+		font-size: 56px;
+		color: #473939;
+		margin: 20px auto;
+		text-align: center;
+	}
 
 	#problems-tiled{
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-around;
+		justify-content: center;
 
 		.box{
-			width: 40%;
+			width: 35%;
+			margin-bottom: 0px;
+			margin: 22px;
 
 			.icons{
-				width: 70px;
-				height: 70px;
+				width: 90px;
+				height: 90px;
 				border-radius: 50%;
 				background-color: #7475d8;
+				margin-bottom: -10px;
 			}
 
 			.head{
-				font-size: 40px;
+				font-size: 32px;
 				text-align: left;
+				margin-bottom: 0px;
+				color: #af8989;
 			}
 
 			.desc{
 				font-size: 19px;
 				text-align: left;
+				color: #302c2c;
 			}
 		}
 	}
@@ -991,6 +1005,14 @@ a.blog-card-link {
 @media only screen and (max-width: 800px) {
 	.problem{
 		padding: 42px 8px;
+
+		.pheading{
+			margin: 10 auto;
+			text-align: center;
+			margin-bottom: 42px !important;
+			font-size: 42px;
+			width: 80%;
+		}
  
 		#problems-tiled{
 			display: flex;
@@ -1011,7 +1033,7 @@ a.blog-card-link {
 				}
 	
 				.head{
-					font-size: 40px;
+					font-size: 32px;
 					text-align: center;
 				}
 	

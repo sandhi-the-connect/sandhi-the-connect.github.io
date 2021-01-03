@@ -701,7 +701,7 @@ a.blog-card-link {
       color: #bba1a1;
       font-size: 36px;
       text-align: center;
-      font-weight: 700; }
+      font-weight: 600; }
     #who-what-why .box .line {
       transition: 0.25s cubic-bezier(0.17, 0.67, 0.83, 0.67);
       width: 50%;
@@ -724,33 +724,51 @@ a.blog-card-link {
     padding: 50px 30px; }
     #who-what-why .box {
       text-align: center;
-      margin: 20px 8px;
+      margin: 20px auto;
       width: 90%; } }
 
 .problem {
-  background-color: #FAD5D5;
-  margin-top: 0; }
+  background-color: #eec8c8;
+  margin-top: 0;
+  size: 0vh; }
+  .problem .pheading {
+    font-size: 56px;
+    color: #473939;
+    margin: 20px auto;
+    text-align: center; }
   .problem #problems-tiled {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; }
+    justify-content: center; }
     .problem #problems-tiled .box {
-      width: 40%; }
+      width: 35%;
+      margin-bottom: 0px;
+      margin: 22px; }
       .problem #problems-tiled .box .icons {
-        width: 70px;
-        height: 70px;
+        width: 90px;
+        height: 90px;
         border-radius: 50%;
-        background-color: #7475d8; }
+        background-color: #7475d8;
+        margin-bottom: -10px; }
       .problem #problems-tiled .box .head {
-        font-size: 40px;
-        text-align: left; }
+        font-size: 32px;
+        text-align: left;
+        margin-bottom: 0px;
+        color: #af8989; }
       .problem #problems-tiled .box .desc {
         font-size: 19px;
-        text-align: left; }
+        text-align: left;
+        color: #302c2c; }
 
 @media only screen and (max-width: 800px) {
   .problem {
     padding: 42px 8px; }
+    .problem .pheading {
+      margin: 10 auto;
+      text-align: center;
+      margin-bottom: 42px !important;
+      font-size: 42px;
+      width: 80%; }
     .problem #problems-tiled {
       display: flex;
       flex-direction: column;
@@ -766,7 +784,7 @@ a.blog-card-link {
           background-color: #7475d8;
           margin: 0 auto; }
         .problem #problems-tiled .box .head {
-          font-size: 40px;
+          font-size: 32px;
           text-align: center; }
         .problem #problems-tiled .box .desc {
           font-size: 19px;
