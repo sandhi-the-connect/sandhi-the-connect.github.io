@@ -901,7 +901,7 @@ a.blog-card-link {
 
 #who-what-why{
 	display: flex;
-	background-color: #f5d2d2;
+	background-color: #F9E7E7;
 	top: 0;
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -956,50 +956,70 @@ a.blog-card-link {
 	}	
 }
 
-#problems-tiled{
-	padding: 0;
-}
+.problem{
+	background-color: #FAD5D5;
+	margin-top: 0;
 
-#problems-tiled{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
+	#problems-tiled{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
 
-	.box{
-		width: 40%;
+		.box{
+			width: 40%;
 
-		.icons{
-			width: 70px;
-			height: 70px;
-			border-radius: 50%;
-			background-color: #7475d8;
-		}
+			.icons{
+				width: 70px;
+				height: 70px;
+				border-radius: 50%;
+				background-color: #7475d8;
+			}
 
-		.head{
-			font-size: 40px;
-			text-align: left;
-		}
+			.head{
+				font-size: 40px;
+				text-align: left;
+			}
 
-		.desc{
-			font-size: 19px;
-			text-align: left;
+			.desc{
+				font-size: 19px;
+				text-align: left;
+			}
 		}
 	}
 }
 
 @media only screen and (max-width: 800px) {
-	#problems-tiled{
-		padding: 0;
-	}
-	#problems-tiled{
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
+	.problem{
+		padding: 42px 8px;
+ 
+		#problems-tiled{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding: 0;
 
-		.box{
-			text-align: center;
-			margin: 20px 8px;
-			width: 95%;
+			.box{
+				margin: 20px 8px;
+				width: 90%;
+		
+				.icons{
+					width: 70px;
+					height: 70px;
+					border-radius: 50%;
+					background-color: #7475d8;
+					margin: 0 auto;
+				}
+	
+				.head{
+					font-size: 40px;
+					text-align: center;
+				}
+	
+				.desc{
+					font-size: 19px;
+					text-align: center;
+				}
+			}
 		}
 	}	
 }
