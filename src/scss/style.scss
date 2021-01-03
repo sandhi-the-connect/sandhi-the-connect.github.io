@@ -901,7 +901,7 @@ a.blog-card-link {
 
 #who-what-why{
 	display: flex;
-	background-color: #F9E7E7;
+	background-color: #ffffff;
 	top: 0;
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -912,7 +912,7 @@ a.blog-card-link {
 		width: 33%;
 
 		.head{
-			color: #bba1a1;
+			color: #d1a7a7;
 			font-size: 36px;
 			text-align: center;
 			font-weight: 600;
@@ -923,7 +923,7 @@ a.blog-card-link {
 			width: 50%;
 			border: 0;
     		height: 2px;	
-			background-color: #67303041;
+			background-color: #a76b6b41;
 			margin-top: -10px;
 			margin-bottom: 26px;
 		}
@@ -958,8 +958,8 @@ a.blog-card-link {
 
 .problem{
 	background-color: #eec8c8;
-	margin-top: 0;
-	size: 0vh;
+	margin: 0;
+	max-height: 10%;
 
 	.pheading{
 		font-size: 56px;
@@ -968,10 +968,21 @@ a.blog-card-link {
 		text-align: center;
 	}
 
+	.line{
+		width: 50%;
+		border: 0;
+		height: 2px;	
+		background-color: #67303046;
+		margin-top: 42px;
+		margin-bottom: -42px;
+	}
+
 	#problems-tiled{
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+		align-items: center;
+		margin-bottom: 0px;
 
 		.box{
 			width: 35%;
@@ -990,7 +1001,7 @@ a.blog-card-link {
 				font-size: 32px;
 				text-align: left;
 				margin-bottom: 0px;
-				color: #af8989;
+				color: #ffffff;
 			}
 
 			.desc{
@@ -1011,7 +1022,11 @@ a.blog-card-link {
 			text-align: center;
 			margin-bottom: 42px !important;
 			font-size: 42px;
-			width: 80%;
+			width: 90%;
+		}
+
+		.line{
+			margin-bottom: 50px;
 		}
  
 		#problems-tiled{
@@ -1039,6 +1054,170 @@ a.blog-card-link {
 	
 				.desc{
 					font-size: 19px;
+					text-align: center;
+				}
+			}
+		}
+	}	
+}
+
+.solutions{
+	background-color: #ffffff;
+	margin-top: 0;
+	margin-bottom: 0;
+
+	.pheading{
+		font-size: 56px;
+		color: #c78f8f;
+		margin: 20px auto;
+		text-align: center;
+		margin-bottom: 42px;
+	}
+
+	.line{
+		width: 50%;
+		border: 0;
+		height: 2px;	
+		background-color: #67303000;
+		margin-top: 42px;
+		margin-bottom: -42px;
+	}
+
+	#people-tiled{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+		margin: 0;
+		padding: 20px;
+
+		.people-image{
+			background-image: url(../assets/about-us/teaching.png);
+			height: 400px;
+		}
+
+		.box{
+			width: 45%;
+			margin-bottom: 0px;
+			margin: 22px;
+
+			.head{
+				font-size: 32px;
+				text-align: left;
+				margin-bottom: 0px;
+				color: #756a6a;
+			}
+
+			.desc{
+				font-size: 20px;
+				text-align: left;
+				color: #9e9a9a;
+			}
+		}
+	}
+
+	#cloud-tiled{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+		margin: 0;
+		padding: 20px;
+
+		.cloud-image{
+			background-image: url(../assets/about-us/cloud.png);
+			height: 400px;
+		}
+
+		.box{
+			width: 45%;
+			margin-bottom: 0px;
+			margin: 22px;
+
+			.head{
+				font-size: 32px;
+				text-align: left;
+				margin-bottom: 0px;
+				color: #756a6a;
+
+			}
+
+			.desc{
+				font-size: 20px;
+				text-align: left;
+				color: #9e9a9a;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.solutions{
+		padding: 0;
+		margin-top: 0px;
+
+		.pheading{
+			margin: 0 auto;
+			text-align: center;
+			margin-bottom: 42px !important;
+			font-size: 42px;
+			width: 90%;
+			padding-top: 30px;
+		}
+
+		.line{
+			margin-bottom: 50px;
+		}
+ 
+		#people-tiled{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding: 0;
+			margin-bottom: 40px;
+
+			.people-image{
+				margin-bottom: 0px !important;
+			}
+
+			.box{
+				margin-top: 0px;
+				width: 90%;
+	
+				.head{
+					font-size: 32px;
+					text-align: center;
+				}
+	
+				.desc{
+					font-size: 20px;
+					text-align: center;
+				}
+			}
+		}
+
+		#cloud-tiled{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding: 0;
+			flex-direction: column-reverse;
+
+			.cloud-image{
+				margin-bottom: 0px !important;
+			}
+
+			.box{
+				margin-top: 0px;
+				width: 90%;
+	
+				.head{
+					font-size: 32px;
+					text-align: center;
+				}
+	
+				.desc{
+					font-size: 20px;
 					text-align: center;
 				}
 			}
