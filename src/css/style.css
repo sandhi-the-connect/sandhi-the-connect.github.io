@@ -3,7 +3,7 @@
   box-sizing: border-box; }
 
 ::selection {
-  background-color: #fb7e7e7c;
+  background-color: #c9595948;
   color: #fff; }
 
 ::-webkit-scrollbar {
@@ -18,6 +18,24 @@
   border-radius: 10px; }
   ::-webkit-scrollbar-thumb:hover {
     background: #c97171; }
+
+main {
+  animation: fadeInAnimation ease-out 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+img {
+  max-width: 100%;
+  max-height: 100%; }
+
+b {
+  font-weight: 700; }
 
 html {
   scroll-behavior: smooth; }
@@ -713,7 +731,7 @@ a.blog-card-link {
     #who-what-why .box:hover .line {
       width: 60%; }
     #who-what-why .box .desc {
-      color: #423232;
+      color: #8f8484;
       font-size: 19px;
       text-align: center; }
 
@@ -721,28 +739,23 @@ a.blog-card-link {
   #who-what-why {
     flex-direction: column;
     height: 100%;
-    padding: 50px 30px; }
+    padding: 50px 8px; }
     #who-what-why .box {
       text-align: center;
       margin: 20px auto;
-      width: 90%; } }
+      width: 85%; } }
 
 .problem {
   background-color: #eec8c8;
+  background: linear-gradient(0deg, #d8a5a5 0%, #ebbebe 55%, #eec8c8 100%);
   margin: 0;
-  max-height: 10%; }
+  max-height: 120%; }
   .problem .pheading {
-    font-size: 56px;
+    font-size: 48px;
     color: #473939;
-    margin: 20px auto;
-    text-align: center; }
-  .problem .line {
-    width: 50%;
-    border: 0;
-    height: 2px;
-    background-color: #67303046;
-    margin-top: 42px;
-    margin-bottom: -42px; }
+    margin: 10px auto;
+    text-align: center;
+    margin-bottom: -25px !important; }
   .problem #problems-tiled {
     display: flex;
     flex-wrap: wrap;
@@ -754,8 +767,8 @@ a.blog-card-link {
       margin-bottom: 0px;
       margin: 22px; }
       .problem #problems-tiled .box .icons {
-        width: 90px;
-        height: 90px;
+        width: 75px;
+        height: 75px;
         border-radius: 50%;
         background-color: #7475d8;
         margin-bottom: -10px; }
@@ -777,7 +790,7 @@ a.blog-card-link {
       text-align: center;
       margin-bottom: 42px !important;
       font-size: 42px;
-      width: 90%; }
+      width: 85%; }
     .problem .line {
       margin-bottom: 50px; }
     .problem #problems-tiled {
@@ -821,13 +834,10 @@ a.blog-card-link {
   .solutions #people-tiled {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     margin: 0;
     padding: 20px; }
-    .solutions #people-tiled .people-image {
-      background-image: url(../assets/about-us/teaching.png);
-      height: 400px; }
     .solutions #people-tiled .box {
       width: 45%;
       margin-bottom: 0px;
@@ -840,17 +850,15 @@ a.blog-card-link {
       .solutions #people-tiled .box .desc {
         font-size: 20px;
         text-align: left;
-        color: #9e9a9a; }
+        color: #9e9a9a;
+        font-weight: 400; }
   .solutions #cloud-tiled {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     margin: 0;
     padding: 20px; }
-    .solutions #cloud-tiled .cloud-image {
-      background-image: url(../assets/about-us/cloud.png);
-      height: 400px; }
     .solutions #cloud-tiled .box {
       width: 45%;
       margin-bottom: 0px;
@@ -863,7 +871,8 @@ a.blog-card-link {
       .solutions #cloud-tiled .box .desc {
         font-size: 20px;
         text-align: left;
-        color: #9e9a9a; }
+        color: #9e9a9a;
+        font-weight: 400; }
 
 @media only screen and (max-width: 800px) {
   .solutions {
@@ -911,4 +920,5 @@ a.blog-card-link {
           text-align: center; }
         .solutions #cloud-tiled .box .desc {
           font-size: 20px;
-          text-align: center; } }
+          text-align: center;
+          margin-bottom: 120px; } }

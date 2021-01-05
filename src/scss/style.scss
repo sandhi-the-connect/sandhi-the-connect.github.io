@@ -3,7 +3,7 @@
 	box-sizing: border-box;
 }
 ::selection {
-	background-color: #fb7e7e7c;
+	background-color: #c9595948;
 	color: #fff;
 }
 ::-webkit-scrollbar {
@@ -19,6 +19,30 @@
 	&:hover {
 		background: #c97171;
 	}
+}
+
+main { 
+    animation: fadeInAnimation ease-out 0.5s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+} 
+  
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+} 
+
+img{
+	max-width:100%;
+	max-height:100%;
+}
+
+b{
+	font-weight: 700;
 }
 
 html {
@@ -934,7 +958,7 @@ a.blog-card-link {
 		}
 
 		.desc{
-			color: #423232;
+			color: #8f8484;
 			font-size: 19px;
 			text-align: center;
 		}
@@ -946,35 +970,28 @@ a.blog-card-link {
 	#who-what-why{
 		flex-direction: column;
 		height: 100%;
-		padding: 50px 30px;
+		padding: 50px 8px;
 
 		.box{
 			text-align: center;
 			margin: 20px auto;
-			width: 90%;
+			width: 85%;
 		}
 	}	
 }
 
 .problem{
 	background-color: #eec8c8;
+	background: linear-gradient(0deg, rgb(216, 165, 165) 0%, rgba(235,190,190,1) 55%, rgba(238,200,200,1) 100%);
 	margin: 0;
-	max-height: 10%;
+	max-height: 120%;
 
 	.pheading{
-		font-size: 56px;
+		font-size: 48px;
 		color: #473939;
-		margin: 20px auto;
+		margin: 10px auto;
 		text-align: center;
-	}
-
-	.line{
-		width: 50%;
-		border: 0;
-		height: 2px;	
-		background-color: #67303046;
-		margin-top: 42px;
-		margin-bottom: -42px;
+		margin-bottom: -25px !important;
 	}
 
 	#problems-tiled{
@@ -990,8 +1007,8 @@ a.blog-card-link {
 			margin: 22px;
 
 			.icons{
-				width: 90px;
-				height: 90px;
+				width: 75px;
+				height: 75px;
 				border-radius: 50%;
 				background-color: #7475d8;
 				margin-bottom: -10px;
@@ -1022,7 +1039,7 @@ a.blog-card-link {
 			text-align: center;
 			margin-bottom: 42px !important;
 			font-size: 42px;
-			width: 90%;
+			width: 85%;
 		}
 
 		.line{
@@ -1086,15 +1103,10 @@ a.blog-card-link {
 	#people-tiled{
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-around;
+		justify-content: space-evenly;
 		align-items: center;
 		margin: 0;
 		padding: 20px;
-
-		.people-image{
-			background-image: url(../assets/about-us/teaching.png);
-			height: 400px;
-		}
 
 		.box{
 			width: 45%;
@@ -1112,6 +1124,7 @@ a.blog-card-link {
 				font-size: 20px;
 				text-align: left;
 				color: #9e9a9a;
+				font-weight: 400;
 			}
 		}
 	}
@@ -1119,15 +1132,10 @@ a.blog-card-link {
 	#cloud-tiled{
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-around;
+		justify-content: space-evenly;
 		align-items: center;
 		margin: 0;
 		padding: 20px;
-
-		.cloud-image{
-			background-image: url(../assets/about-us/cloud.png);
-			height: 400px;
-		}
 
 		.box{
 			width: 45%;
@@ -1146,6 +1154,7 @@ a.blog-card-link {
 				font-size: 20px;
 				text-align: left;
 				color: #9e9a9a;
+				font-weight: 400;
 			}
 		}
 	}
@@ -1219,6 +1228,7 @@ a.blog-card-link {
 				.desc{
 					font-size: 20px;
 					text-align: center;
+					margin-bottom: 120px;
 				}
 			}
 		}
