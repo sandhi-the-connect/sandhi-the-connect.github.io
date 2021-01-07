@@ -20,7 +20,7 @@
     background: #c97171; }
 
 main {
-  animation: fadeInAnimation ease-out 1s;
+  animation: fadeInAnimation ease-out 0.75s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards; }
 
@@ -30,12 +30,13 @@ main {
   100% {
     opacity: 1; } }
 
-img {
-  max-width: 100%;
-  max-height: 100%; }
-
-b {
-  font-weight: 700; }
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); }
+  40% {
+    transform: translateY(-10px); }
+  60% {
+    transform: translateY(-5px); } }
 
 html {
   scroll-behavior: smooth; }
@@ -46,6 +47,13 @@ body {
   font-family: 'Inter', Ubuntu, Helvetica, Arial, sans-serif;
   font-weight: 500;
   overflow-x: hidden; }
+
+img {
+  max-width: 100%;
+  max-height: 100%; }
+
+b {
+  font-weight: 700; }
 
 nav {
   color: white;
@@ -131,6 +139,257 @@ nav.open {
   100% {
     width: 120px;
     height: 120px; } }
+
+#homepage #intro {
+  background: url(../assets/index/main.jpg);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-position: 0% 52%;
+  height: 90vh;
+  position: relative; }
+  #homepage #intro .content {
+    position: absolute;
+    bottom: 50px;
+    left: 65px; }
+    #homepage #intro .content #title {
+      font-size: 32px; }
+    #homepage #intro .content #headline {
+      font-size: 42px; }
+    #homepage #intro .content #scroll {
+      color: white;
+      font-size: 86px;
+      font-weight: 100;
+      opacity: 0.5;
+      transition: 0.15s;
+      -moz-animation: bounce 2s infinite;
+      -webkit-animation: bounce 2s infinite;
+      animation: bounce 2s infinite; }
+      #homepage #intro .content #scroll:hover {
+        opacity: 1; }
+
+#homepage #about-us {
+  background: url(../assets/index/about.jpg);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-position: 0% 52%;
+  transition: box-shadow 0.65s, background-position 0.75s;
+  height: 100vh; }
+  #homepage #about-us #title {
+    margin-top: 45px; }
+  #homepage #about-us:hover {
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.75);
+    background-position: 0% 55%; }
+  #homepage #about-us .line {
+    width: 100%;
+    margin: 35px 0px;
+    height: 4px;
+    border-color: #ffffff00;
+    border-style: solid;
+    background-color: rgba(255, 255, 255, 0.4); }
+  #homepage #about-us #stats-tiled {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 0px; }
+    #homepage #about-us #stats-tiled .stats {
+      width: 300px;
+      margin: 20px 10px; }
+      #homepage #about-us #stats-tiled .stats .s-head {
+        font-size: 24px;
+        color: rgba(255, 255, 255, 0.7);
+        margin-bottom: 6px; }
+      #homepage #about-us #stats-tiled .stats .s-body {
+        font-size: 42px;
+        font-weight: 800;
+        color: #fff; }
+
+#homepage #mission {
+  background-color: #ffffff; }
+  #homepage #mission .mission-tiled {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 0px; }
+    #homepage #mission .mission-tiled .dps {
+      width: 50%;
+      margin: 40px 40px 40px 20px; }
+    #homepage #mission .mission-tiled .statement {
+      width: 40%; }
+      #homepage #mission .mission-tiled .statement #title {
+        font-size: 42px;
+        color: #35353bce; }
+      #homepage #mission .mission-tiled .statement .line {
+        margin: 30px 5px;
+        width: 70%;
+        height: 1px;
+        border-color: #00000000;
+        border-style: solid;
+        background-color: rgba(121, 121, 121, 0.4); }
+      #homepage #mission .mission-tiled .statement #content {
+        font-size: 20px;
+        color: #a1a1a1; }
+
+#homepage #blog {
+  background: url(../assets/index/blog.jpg);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-position: 0% 52%;
+  transition: box-shadow 0.65s, background-position 0.75s; }
+  #homepage #blog:hover {
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.75);
+    background-position: 0% 55%; }
+  #homepage #blog #title {
+    margin-top: 45px; }
+  #homepage #blog .button {
+    background-color: #ffffff23;
+    border: 3px solid white;
+    color: white;
+    padding: 16px;
+    border-radius: 40px;
+    width: 220px;
+    margin: 25px 0px 45px 0px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 26px;
+    font-family: inter;
+    transition: 0.25s;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
+    #homepage #blog .button:hover {
+      background-color: #ffffff3a; }
+
+#homepage #vlog {
+  background: url(../assets/index/vlog.jpg);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-position: 0% 52%;
+  transition: box-shadow 0.65s, background-position 0.75s; }
+  #homepage #vlog:hover {
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.75);
+    background-position: 0% 55%; }
+  #homepage #vlog #title {
+    margin-top: 45px; }
+  #homepage #vlog .button {
+    background-color: #ffffff23;
+    border: 3px solid white;
+    color: white;
+    padding: 16px;
+    border-radius: 40px;
+    width: 300px;
+    margin: 25px 0px 45px 0px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 26px;
+    font-family: inter;
+    transition: 0.25s;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
+    #homepage #vlog .button:hover {
+      background-color: #ffffff3a; }
+
+#homepage #team {
+  background: url(../assets/index/team.jpg);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-position: 0% 52%;
+  transition: box-shadow 0.65s, background-position 0.75s;
+  height: 50vh; }
+  #homepage #team:hover {
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.75);
+    background-position: 0% 55%; }
+  #homepage #team .button {
+    background-color: #ffffff23;
+    border: 3px solid white;
+    color: white;
+    padding: 16px;
+    border-radius: 40px;
+    width: 300px;
+    margin: 25px 0px 45px 0px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 26px;
+    font-family: inter;
+    transition: 0.25s;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
+    #homepage #team .button:hover {
+      background-color: #ffffff3a; }
+
+@media only screen and (max-width: 900px) {
+  #homepage #intro {
+    height: 75vh; }
+    #homepage #intro .content {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      width: 80%;
+      margin: 30px; }
+      #homepage #intro .content #title {
+        font-size: 24px;
+        margin: 0;
+        margin: 12px 0px; }
+      #homepage #intro .content #headline {
+        font-size: 26px;
+        margin: 0; }
+      #homepage #intro .content #scroll {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 28px; }
+  #homepage #about-us {
+    background: url(../assets/index/about.jpg);
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.75);
+    background-size: cover;
+    background-position: 0% 52%;
+    transition: box-shadow 0.65s, background-position 0.75s; }
+    #homepage #about-us:hover {
+      box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+      background-position: 0% 55%; }
+    #homepage #about-us #stats-tiled {
+      display: flex;
+      flex-direction: column;
+      padding: 0px;
+      margin-bottom: 0px; }
+      #homepage #about-us #stats-tiled .stats {
+        width: 100%;
+        margin: 15px 0px; }
+        #homepage #about-us #stats-tiled .stats .s-head {
+          font-size: 22px;
+          color: rgba(255, 255, 255, 0.7); }
+        #homepage #about-us #stats-tiled .stats .s-body {
+          font-size: 36px;
+          font-weight: 800;
+          color: #fff; }
+  #homepage #mission {
+    background-color: #ffffff; }
+    #homepage #mission .mission-tiled {
+      display: flex;
+      flex-direction: column;
+      align-content: center; }
+      #homepage #mission .mission-tiled .dps {
+        width: 95%;
+        margin: 10px 10px 10px 10px; }
+      #homepage #mission .mission-tiled .statement {
+        width: 95%; }
+        #homepage #mission .mission-tiled .statement #title {
+          text-align: center; }
+        #homepage #mission .mission-tiled .statement #content {
+          margin-bottom: 30px;
+          text-align: justify; }
+        #homepage #mission .mission-tiled .statement .line {
+          opacity: 0.3;
+          width: 80%;
+          margin: 20px auto; }
+  #homepage #team {
+    margin-bottom: 80px;
+    height: 400px; }
+    #homepage #team .button {
+      margin-bottom: 95px; } }
 
 #blog-display {
   position: fixed;
@@ -364,15 +623,20 @@ main {
             border-radius: 50%;
             margin-bottom: 16px; }
           main#team section div.card-flex div.team-card .naman {
-            background: url("../assets/team/naman.png"); }
+            background: url("../assets/team/naman.png");
+            background-size: contain; }
           main#team section div.card-flex div.team-card .kairon {
-            background: url("../assets/team/kairon.png"); }
+            background: url("../assets/team/kairon.png");
+            background-size: contain; }
           main#team section div.card-flex div.team-card .swastika {
-            background: url("../assets/team/swastika.png"); }
+            background: url("../assets/team/swastika.png");
+            background-size: contain; }
           main#team section div.card-flex div.team-card .shubhro {
-            background: url("../assets/team/shubhro.png"); }
+            background: url("../assets/team/shubhro.png");
+            background-size: contain; }
           main#team section div.card-flex div.team-card .santripta {
-            background: url("../assets/team/santripta.png"); }
+            background: url("../assets/team/santripta.png");
+            background-size: contain; }
           main#team section div.card-flex div.team-card .card-content {
             margin-left: 8px; }
             main#team section div.card-flex div.team-card .card-content .name {
@@ -450,35 +714,50 @@ main {
             background-color: #7475d8;
             margin-bottom: 16px; }
           main#team section div.card-flex div.team-card-role .anahita {
-            background: url("../assets/team/anahita.png"); }
+            background: url("../assets/team/anahita.png");
+            background-size: contain; }
           main#team section div.card-flex div.team-card-role .jyotika {
-            background: url("../assets/team/jyotika.png"); }
+            background: url("../assets/team/jyotika.png");
+            background-size: contain; }
           main#team section div.card-flex div.team-card-role .kudrat {
-            background: url("../assets/team/kudrat.png"); }
+            background: url("../assets/team/kudrat.png");
+            background-size: contain; }
           main#team section div.card-flex div.team-card-role .paarth {
-            background: url("../assets/team/paarth.png"); }
+            background: url("../assets/team/paarth.png");
+            background-size: contain; }
           main#team section div.card-flex div.team-card-role .shrey {
-            background: url("../assets/team/shrey.png"); }
+            background: url("../assets/team/shrey.png");
+            background-size: contain; }
           main#team section div.card-flex div.team-card-role .ambi {
-            background: url("../assets/team/ambi.png"); }
+            background: url("../assets/team/ambi.png");
+            background-size: contain; }
           main#team section div.card-flex div.team-card-role .anisha {
-            background: url("../assets/team/anisha.png"); }
+            background: url("../assets/team/anisha.png");
+            background-size: contain; }
           main#team section div.card-flex div.team-card-role .kabir {
-            background: url("../assets/team/kabir.png"); }
+            background: url("../assets/team/kabir.png");
+            background-size: contain; }
           main#team section div.card-flex div.team-card-role .shria {
-            background: url("../assets/team/shria.png"); }
+            background: url("../assets/team/shria.png");
+            background-size: contain; }
           main#team section div.card-flex div.team-card-role .sukhumjeet {
-            background: url("../assets/team/sukhumjeet.png"); }
+            background: url("../assets/team/sukhumjeet.png");
+            background-size: contain; }
           main#team section div.card-flex div.team-card-role .ananya {
-            background: url("../assets/team/ananya.png"); }
+            background: url("../assets/team/ananya.png");
+            background-size: contain; }
           main#team section div.card-flex div.team-card-role .khanak {
-            background: url("../assets/team/khanak.png"); }
+            background: url("../assets/team/khanak.png");
+            background-size: contain; }
           main#team section div.card-flex div.team-card-role .medhya {
-            background: url("../assets/team/medhya.png"); }
+            background: url("../assets/team/medhya.png");
+            background-size: contain; }
           main#team section div.card-flex div.team-card-role .samridhi {
-            background: url("../assets/team/samridhi.png"); }
+            background: url("../assets/team/samridhi.png");
+            background-size: contain; }
           main#team section div.card-flex div.team-card-role .tapasmi {
-            background: url("../assets/team/tapasmi.png"); }
+            background: url("../assets/team/tapasmi.png");
+            background-size: contain; }
           main#team section div.card-flex div.team-card-role .card-content {
             margin-left: 8px; }
             main#team section div.card-flex div.team-card-role .card-content .name {

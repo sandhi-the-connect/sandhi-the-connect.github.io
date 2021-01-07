@@ -22,7 +22,7 @@
 }
 
 main { 
-    animation: fadeInAnimation ease-out 0.5s;
+    animation: fadeInAnimation ease-out 0.75s;
     animation-iteration-count: 1; 
     animation-fill-mode: forwards; 
 } 
@@ -34,15 +34,18 @@ main {
     100% { 
         opacity: 1; 
      } 
-} 
-
-img{
-	max-width:100%;
-	max-height:100%;
 }
 
-b{
-	font-weight: 700;
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+	  transform: translateY(0);
+	}
+	40% {
+	  transform: translateY(-10px);
+	}
+	60% {
+	  transform: translateY(-5px);
+	}
 }
 
 html {
@@ -56,6 +59,16 @@ body {
 	font-weight: 500;
 	overflow-x: hidden;
 }
+
+img{
+	max-width:100%;
+	max-height:100%;
+}
+
+b{
+	font-weight: 700;
+}
+
 nav {
 	color: white;
 	text-decoration: none;
@@ -159,6 +172,362 @@ nav.open {
 		width: 120px;
 		height: 120px;
 	}
+}
+
+#homepage{
+	#intro{
+		background: url(../assets/index/main.jpg);
+		box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+		background-size: cover;
+		background-position: 0% 52%;
+		height: 90vh;
+		position: relative;
+
+		.content{
+			position:absolute;
+			bottom: 50px;
+			left: 65px;
+
+			#title{
+				font-size: 32px;
+			}
+
+			#headline{
+				font-size: 42px;
+			}
+
+			#scroll{
+				color: white;
+				font-size: 86px;
+				font-weight: 100;
+
+				opacity: 0.5;
+				transition: 0.15s;
+
+				-moz-animation: bounce 2s infinite;
+				-webkit-animation: bounce 2s infinite;
+				animation: bounce 2s infinite;
+
+				&:hover{
+					opacity: 1;
+				}
+			}
+		}
+	}
+	#about-us{
+		background: url(../assets/index/about.jpg);
+		box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+		background-size: cover;
+		background-position: 0% 52%;
+		transition: box-shadow 0.65s, background-position 0.75s;	
+		height: 100vh;
+
+		#title{
+			margin-top: 45px;			
+		}
+
+		&:hover{
+			box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.75);
+			background-position: 0% 55%;  
+		}
+
+		.line{
+			width: 100%;
+			margin: 35px 0px;
+			height: 4px;
+			border-color: #ffffff00;
+			border-style: solid;
+			background-color: rgba(255, 255, 255, 0.4);
+		}
+
+		#stats-tiled{
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			margin-bottom: 0px;
+
+			.stats{
+				width: 300px;
+				margin: 20px 10px;
+
+				.s-head{
+					font-size: 24px;
+					color: rgba(255, 255, 255, 0.7);
+					margin-bottom: 6px;
+				}
+
+				.s-body{
+					font-size: 42px;
+					font-weight: 800;
+					color: #fff;
+				}
+			}
+		}
+	}
+	#mission{
+		background-color:#ffffff;
+
+		.mission-tiled{
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			margin-bottom: 0px;
+
+			.dps{
+				width: 50%;
+				margin: 40px 40px 40px 20px;
+			}
+
+			.statement{
+				width: 40%;
+
+				#title{
+					font-size: 42px;
+					color:#35353bce;
+				}
+				.line{
+					margin: 30px 5px;
+					width: 70%;
+					height: 1px;
+					border-color: #00000000;
+					border-style: solid;
+					background-color: rgba(121, 121, 121, 0.4);
+				}
+				#content{
+					font-size: 20px;
+					color: #a1a1a1;
+				}
+			}
+		}
+	}
+	#blog{
+		background: url(../assets/index/blog.jpg);
+		box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+		background-size: cover;
+		background-position: 0% 52%;
+		transition: box-shadow 0.65s, background-position 0.75s;	
+		
+		&:hover{
+			box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.75);
+			background-position: 0% 55%;  
+		}
+
+		#title{
+			margin-top: 45px;			
+		}
+
+		.button{
+			background-color: #ffffff23;
+			border: 3px solid rgb(255, 255, 255);
+			color: white;
+			padding: 16px;
+			border-radius: 40px;
+			width: 220px;
+			margin: 25px 0px 45px 0px;
+
+			text-align: center;
+			font-weight: 500;
+			font-size: 26px;
+			font-family: inter;
+			
+			transition: 0.25s;
+			cursor: pointer;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+
+			&:hover{
+				background-color: #ffffff3a;				
+			}
+		}
+	}
+	#vlog{
+		background: url(../assets/index/vlog.jpg);
+		box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+		background-size: cover;
+		background-position: 0% 52%;
+		transition: box-shadow 0.65s, background-position 0.75s;	
+		
+		&:hover{
+			box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.75);
+			background-position: 0% 55%;  
+		}
+
+		#title{
+			margin-top: 45px;			
+		}
+
+		.button{
+			background-color: #ffffff23;
+			border: 3px solid rgb(255, 255, 255);
+			color: white;
+			padding: 16px;
+			border-radius: 40px;
+			width: 300px;
+			margin: 25px 0px 45px 0px;
+
+			text-align: center;
+			font-weight: 500;
+			font-size: 26px;
+			font-family: inter;
+			
+			transition: 0.25s;
+			cursor: pointer;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+
+			&:hover{
+				background-color: #ffffff3a;				
+			}
+		}
+	}
+	#team{
+		background: url(../assets/index/team.jpg);
+		box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+		background-size: cover;
+		background-position: 0% 52%;
+		transition: box-shadow 0.65s, background-position 0.75s;	
+		height: 50vh;
+
+		&:hover{
+			box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.75);
+			background-position: 0% 55%;  
+		}
+
+		.button{
+			background-color: #ffffff23;
+			border: 3px solid rgb(255, 255, 255);
+			color: white;
+			padding: 16px;
+			border-radius: 40px;
+			width: 300px;
+			margin: 25px 0px 45px 0px;
+
+			text-align: center;
+			font-weight: 500;
+			font-size: 26px;
+			font-family: inter;
+			
+			transition: 0.25s;
+			cursor: pointer;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+
+			&:hover{
+				background-color: #ffffff3a;				
+			}
+		}		
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	#homepage{
+		#intro{
+			height: 75vh;
+
+			.content{
+				position:absolute;
+				bottom: 0px;
+				left: 0px;
+				width: 80%;
+				margin: 30px;
+	
+				#title{
+					font-size: 24px;
+					margin: 0;
+					margin: 12px 0px;
+				}
+	
+				#headline{
+					font-size: 26px;
+					margin: 0;
+				}
+
+				#scroll{
+					font-size: 40px;
+					text-align: center;
+					margin-top: 28px;
+				}
+			}
+		}
+
+		#about-us{
+			background: url(../assets/index/about.jpg);
+			box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.75);
+			background-size: cover;
+			background-position: 0% 52%;
+			transition: box-shadow 0.65s, background-position 0.75s;
+	
+			&:hover{
+				box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+				background-position: 0% 55%;  
+			}
+			#stats-tiled{
+				display: flex;
+				flex-direction: column;
+				padding: 0px;				
+				margin-bottom: 0px;
+	
+				.stats{
+					width: 100%;
+					margin: 15px 0px;
+	
+					.s-head{
+						font-size: 22px;
+						color: rgba(255, 255, 255, 0.7);
+					}
+	
+					.s-body{
+						font-size: 36px;
+						font-weight: 800;
+						color: #fff;
+					}
+				}
+			}
+		}
+		#mission{
+			background-color:#ffffff;
+			
+			.mission-tiled{
+				display: flex;
+				flex-direction: column;
+				align-content: center;
+	
+				.dps{
+					width: 95%;
+					margin: 10px 10px 10px 10px;
+				}
+	
+				.statement{
+					width: 95%;
+
+					#title{
+						text-align: center;
+					}
+					#content{
+						margin-bottom: 30px;
+						text-align: justify;
+					}
+					.line{
+						opacity: 0.3;
+						width: 80%;
+						margin: 20px auto;
+					}
+				}
+			}
+		}
+		#team{
+			margin-bottom: 80px;
+			height: 400px;
+
+			.button{
+				margin-bottom: 95px;
+			}
+		}
+	}	
+	
 }
 
 #blog-display
@@ -447,11 +816,11 @@ main {
                         border-radius: 50%;
 						margin-bottom: 16px;
 					}
-					.naman{background: url("../assets/team/naman.png");}
-					.kairon{background: url("../assets/team/kairon.png");}
-					.swastika{background: url("../assets/team/swastika.png");}
-					.shubhro{background: url("../assets/team/shubhro.png");}
-					.santripta{background: url("../assets/team/santripta.png");}
+					.naman{background: url("../assets/team/naman.png"); background-size: contain;}
+					.kairon{background: url("../assets/team/kairon.png"); background-size: contain;}
+					.swastika{background: url("../assets/team/swastika.png"); background-size: contain;}
+					.shubhro{background: url("../assets/team/shubhro.png"); background-size: contain;}
+					.santripta{background: url("../assets/team/santripta.png"); background-size: contain;}
 
                     .card-content
                     {
@@ -559,21 +928,21 @@ main {
                         background-color: #7475d8;
                         margin-bottom: 16px;
 					}
-					.anahita{background: url("../assets/team/anahita.png");}
-					.jyotika{background: url("../assets/team/jyotika.png");}
-					.kudrat{background: url("../assets/team/kudrat.png");}
-					.paarth{background: url("../assets/team/paarth.png");}
-					.shrey{background: url("../assets/team/shrey.png");}
-					.ambi{background: url("../assets/team/ambi.png");}
-					.anisha{background: url("../assets/team/anisha.png");}
-					.kabir{background: url("../assets/team/kabir.png");}
-					.shria{background: url("../assets/team/shria.png");}
-					.sukhumjeet{background: url("../assets/team/sukhumjeet.png");}
-					.ananya{background: url("../assets/team/ananya.png");}
-					.khanak{background: url("../assets/team/khanak.png");}
-					.medhya{background: url("../assets/team/medhya.png");}
-					.samridhi{background: url("../assets/team/samridhi.png");}
-					.tapasmi{background: url("../assets/team/tapasmi.png");}
+					.anahita{background: url("../assets/team/anahita.png"); background-size: contain;}
+					.jyotika{background: url("../assets/team/jyotika.png"); background-size: contain;}
+					.kudrat{background: url("../assets/team/kudrat.png"); background-size: contain;}
+					.paarth{background: url("../assets/team/paarth.png"); background-size: contain;}
+					.shrey{background: url("../assets/team/shrey.png"); background-size: contain;}
+					.ambi{background: url("../assets/team/ambi.png"); background-size: contain;}
+					.anisha{background: url("../assets/team/anisha.png"); background-size: contain;}
+					.kabir{background: url("../assets/team/kabir.png"); background-size: contain;}
+					.shria{background: url("../assets/team/shria.png"); background-size: contain;}
+					.sukhumjeet{background: url("../assets/team/sukhumjeet.png"); background-size: contain;}
+					.ananya{background: url("../assets/team/ananya.png"); background-size: contain;}
+					.khanak{background: url("../assets/team/khanak.png"); background-size: contain;}
+					.medhya{background: url("../assets/team/medhya.png"); background-size: contain;}
+					.samridhi{background: url("../assets/team/samridhi.png"); background-size: contain;}
+					.tapasmi{background: url("../assets/team/tapasmi.png"); background-size: contain;}
 
                     .card-content
                     {
